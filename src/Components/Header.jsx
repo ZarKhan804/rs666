@@ -1,10 +1,10 @@
+
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import {
   Menu,
   X,
   Download,
-  Gamepad2,
   ChevronRight,
 } from "lucide-react";
 
@@ -39,13 +39,13 @@ export default function Header() {
             onClick={closeMenu}
             className="group flex items-center gap-3"
           >
-            {/* Logo Icon */}
-            <div className="relative flex h-11 w-11 items-center justify-center overflow-hidden rounded-xl bg-gradient-to-br from-yellow-300 via-yellow-400 to-amber-500 shadow-lg shadow-yellow-500/20 transition duration-300 group-hover:scale-105 group-hover:shadow-yellow-400/40">
 
-              <Gamepad2
-                size={23}
-                strokeWidth={2.5}
-                className="text-slate-950"
+            {/* Logo Image */}
+            <div className="relative flex h-11 w-11 items-center justify-center overflow-hidden rounded-xl bg-gradient-to-br from-yellow-300 via-yellow-400 to-amber-500 shadow-lg shadow-yellow-500/20 transition duration-300 group-hover:scale-105 group-hover:shadow-yellow-400/40">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB_WP8_RE8VQ3n5hRA6qQGwJ17yuor8qbHdXmmqvmLz4yzvNfun1p7YVcg&s=10"
+                alt="666 RS Logo"
+                className="h-full w-full object-cover"
               />
 
               <div className="absolute inset-0 bg-white/20 opacity-0 transition group-hover:opacity-100" />
@@ -195,9 +195,12 @@ export default function Header() {
               <Download size={18} />
               Download Game
             </NavLink>
+
           </div>
         </div>
+
       </div>
     </header>
   );
 }
+

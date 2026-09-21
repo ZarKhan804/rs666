@@ -1,7 +1,7 @@
+
 import { Link } from "react-router-dom";
 
 import {
-  Gamepad2,
   Download,
   ArrowUpRight,
   ShieldCheck,
@@ -40,8 +40,6 @@ export default function Footer() {
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
-       
-
         {/* ================= MAIN FOOTER ================= */}
 
         <div className="grid gap-12 py-14 md:grid-cols-2 lg:grid-cols-4 lg:gap-10">
@@ -57,12 +55,12 @@ export default function Footer() {
 
               {/* LOGO */}
 
-              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-yellow-300 via-yellow-400 to-amber-500 shadow-lg shadow-yellow-500/10 transition duration-300 group-hover:scale-105 group-hover:shadow-yellow-400/20">
+              <div className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-xl bg-gradient-to-br from-yellow-300 via-yellow-400 to-amber-500 shadow-lg shadow-yellow-500/10 transition duration-300 group-hover:scale-105 group-hover:shadow-yellow-400/20">
 
-                <Gamepad2
-                  size={25}
-                  strokeWidth={2.5}
-                  className="text-slate-950"
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB_WP8_RE8VQ3n5hRA6qQGwJ17yuor8qbHdXmmqvmLz4yzvNfun1p7YVcg&s=10"
+                  alt="666 RS Logo"
+                  className="h-full w-full object-cover"
                 />
 
               </div>
@@ -255,3 +253,4 @@ export default function Footer() {
     </footer>
   );
 }
+
