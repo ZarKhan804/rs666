@@ -1,156 +1,276 @@
+import { useState } from "react";
+import { Mail, MessageCircle, Send, Phone } from "lucide-react";
+import emailjs from "@emailjs/browser";
+
 function ContentSection() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
+
+  const [loading, setLoading] = useState(false);
+
+  function handleChange(e) {
+    const { name, value } = e.target;
+
+    setFormData((previousData) => ({
+      ...previousData,
+      [name]: value,
+    }));
+  }
+
+  async function handleSubmit(e) {
+    e.preventDefault();
+
+    if (loading) return;
+
+    setLoading(true);
+
+    try {
+      const result = await emailjs.send(
+        "service_yx5kvr4",
+        "template_z3th0n8",
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          phone: formData.phone,
+          message: formData.message,
+          to_email: "zaarkhan483@gmail.com",
+        },
+        "o51quF5mpQW-ucABt"
+      );
+
+      console.log("EmailJS Success:", result.text);
+
+      alert("Message Sent Successfully!");
+
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        message: "",
+      });
+    } catch (error) {
+      console.error("EmailJS Error:", error);
+
+      alert(
+        `Message could not be sent.\n\nStatus: ${
+          error?.status || "Unknown"
+        }\nText: ${error?.text || "Please try again later."}`
+      );
+    } finally {
+      setLoading(false);
+    }
+  }
+
   return (
     <section
       id="contact-form"
-      className="relative overflow-hidden bg-gray-400 py-16 text-gray-900 sm:py-20 lg:py-24"
+      aria-labelledby="contact-form-title"
+      className="bg-gray-400"
     >
-      {/* Background Effects */}
-      <div className="pointer-events-none absolute inset-0">
-        <div className="absolute left-[-150px] top-1/2 h-[350px] w-[350px] -translate-y-1/2 rounded-full bg-yellow-400/10 blur-[120px]" />
+      <div className="mx-auto grid max-w-7xl gap-10 px-5 py-12 sm:py-16 md:grid-cols-2 lg:px-8">
 
-        <div className="absolute bottom-[-150px] right-[-120px] h-[350px] w-[350px] rounded-full bg-amber-400/10 blur-[120px]" />
-      </div>
+        {/* LEFT CONTENT */}
 
-      {/* Main Container */}
-      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-
-        {/* Heading */}
-        <div className="mx-auto max-w-2xl text-center">
-
-          <div className="mb-5 inline-flex rounded-full border border-yellow-600/30 bg-gray-300 px-5 py-2 shadow-sm">
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-yellow-800">
-              Contact 666RS
-            </span>
-          </div>
-
-          <h2 className="text-3xl font-black tracking-tight text-gray-950 sm:text-4xl lg:text-5xl">
-            Send Us a{" "}
-            <span className="text-yellow-700">
-              Message
-            </span>
-          </h2>
-
-          <p className="mt-5 text-base leading-7 text-gray-700 sm:text-lg">
-            Have a question or want to share something with us?
-            Fill out the form below and send your message.
+        <div>
+          <p className="text-center text-xs font-bold uppercase tracking-[0.2em] text-yellow-700 md:text-left sm:text-sm">
+            666RS Game Contact
           </p>
 
-        </div>
-
-        {/* Form Area */}
-        <div className="mx-auto mt-12 max-w-3xl">
-
-          <form
-            className="rounded-3xl border border-gray-300/70 bg-gray-300/70 p-6 shadow-2xl shadow-gray-500/20 backdrop-blur-md sm:p-8 lg:p-10"
+          <h2
+            id="contact-form-title"
+            className="mt-3 text-center text-3xl font-black text-gray-950 sm:text-4xl md:text-left"
           >
+            Contact 666RS Game
+          </h2>
 
-            {/* Name + Email */}
-            <div className="grid gap-5 sm:grid-cols-2">
+          <p className="mt-5 text-center text-sm leading-7 text-gray-700 sm:text-base md:text-left">
+            Visitors can use the 666RS contact form to send questions,
+            feedback, account-related enquiries, or general platform
+            information requests. Provide accurate details so your message
+            can be understood clearly.
+          </p>
 
-              <div>
-                <label
-                  htmlFor="name"
-                  className="mb-2 block text-sm font-bold text-gray-800"
-                >
-                  Your Name
-                </label>
+          <div className="mt-7 space-y-3">
 
-                <input
-                  id="name"
-                  type="text"
-                  name="name"
-                  placeholder="Enter your name"
-                  required
-                  className="w-full rounded-xl border border-gray-400/70 bg-gray-200/70 px-4 py-3.5 text-sm text-gray-900 outline-none transition duration-300 placeholder:text-gray-500 focus:border-yellow-500 focus:bg-white/80 focus:ring-2 focus:ring-yellow-400/20"
-                />
-              </div>
-
-              <div>
-                <label
-                  htmlFor="email"
-                  className="mb-2 block text-sm font-bold text-gray-800"
-                >
-                  Your Email
-                </label>
-
-                <input
-                  id="email"
-                  type="email"
-                  name="email"
-                  placeholder="Enter your email"
-                  required
-                  className="w-full rounded-xl border border-gray-400/70 bg-gray-200/70 px-4 py-3.5 text-sm text-gray-900 outline-none transition duration-300 placeholder:text-gray-500 focus:border-yellow-500 focus:bg-white/80 focus:ring-2 focus:ring-yellow-400/20"
-                />
-              </div>
-
-            </div>
-
-            {/* Subject */}
-            <div className="mt-5">
-
-              <label
-                htmlFor="subject"
-                className="mb-2 block text-sm font-bold text-gray-800"
-              >
-                Subject
-              </label>
-
-              <input
-                id="subject"
-                type="text"
-                name="subject"
-                placeholder="What would you like to ask?"
-                required
-                className="w-full rounded-xl border border-gray-400/70 bg-gray-200/70 px-4 py-3.5 text-sm text-gray-900 outline-none transition duration-300 placeholder:text-gray-500 focus:border-yellow-500 focus:bg-white/80 focus:ring-2 focus:ring-yellow-400/20"
+            <a
+              href="mailto:contact@royalxcasinos777.com"
+              aria-label="Email 666RS Game Support"
+              className="flex items-center gap-4 rounded-xl border border-gray-300 bg-white p-4 transition duration-300 hover:-translate-y-1 hover:border-yellow-400 hover:shadow-md"
+            >
+              <Mail
+                aria-hidden="true"
+                className="shrink-0 text-yellow-500"
               />
 
+              <span className="text-sm font-medium text-gray-700 sm:text-base">
+                contact@royalxcasinos777.com
+              </span>
+            </a>
+
+            <div className="flex items-center gap-4 rounded-xl border border-gray-300 bg-white p-4">
+              <Phone
+                aria-hidden="true"
+                className="shrink-0 text-yellow-500"
+              />
+
+              <span className="text-sm font-medium text-gray-700 sm:text-base">
+                666RS Contact Support
+              </span>
             </div>
 
-            {/* Message */}
-            <div className="mt-5">
+            <div className="flex items-center gap-4 rounded-xl border border-gray-300 bg-white p-4">
+              <MessageCircle
+                aria-hidden="true"
+                className="shrink-0 text-yellow-500"
+              />
 
-              <label
-                htmlFor="message"
-                className="mb-2 block text-sm font-bold text-gray-800"
-              >
-                Your Message
-              </label>
-
-              <textarea
-                id="message"
-                name="message"
-                rows="6"
-                placeholder="Write your message here..."
-                required
-                className="w-full resize-none rounded-xl border border-gray-400/70 bg-gray-200/70 px-4 py-3.5 text-sm leading-7 text-gray-900 outline-none transition duration-300 placeholder:text-gray-500 focus:border-yellow-500 focus:bg-white/80 focus:ring-2 focus:ring-yellow-400/20"
-              ></textarea>
-
+              <span className="text-sm font-medium text-gray-700 sm:text-base">
+                666RS Customer Assistance
+              </span>
             </div>
 
-            {/* Submit Button */}
-            <div className="mt-7 text-center">
+          </div>
 
-              <button
-                type="submit"
-                className="w-full rounded-xl bg-gradient-to-r from-yellow-300 via-yellow-400 to-amber-400 px-8 py-4 text-sm font-black text-gray-950 shadow-lg shadow-yellow-600/20 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-yellow-600/30 sm:w-auto sm:min-w-[220px]"
-              >
-                Send Message
-              </button>
+          <div className="mt-6 grid grid-cols-2 gap-3">
 
-            </div>
+            <a
+              href="/666rs/download"
+              className="rounded-xl border border-gray-300 bg-white p-4 text-center text-sm font-bold text-gray-800 transition hover:-translate-y-1 hover:border-yellow-400 hover:shadow-md"
+            >
+              666RS Download
+            </a>
 
-            {/* Bottom Text */}
-            <p className="mt-5 text-center text-xs leading-6 text-gray-600">
-              Please provide accurate information so we can better
-              understand your message.
-            </p>
+            <a
+              href="/666rs"
+              className="rounded-xl border border-gray-300 bg-white p-4 text-center text-sm font-bold text-gray-800 transition hover:-translate-y-1 hover:border-yellow-400 hover:shadow-md"
+            >
+              666RS Game
+            </a>
 
-          </form>
-
+          </div>
         </div>
 
-      </div>
+        {/* FORM */}
 
+        <form
+          onSubmit={handleSubmit}
+          aria-label="666RS Game contact form"
+          className="rounded-2xl border border-gray-300 bg-white p-6 shadow-lg sm:p-8"
+        >
+
+          <div>
+            <label
+              htmlFor="contact-name"
+              className="mb-2 block text-sm font-semibold text-gray-800"
+            >
+              Name
+            </label>
+
+            <input
+              id="contact-name"
+              required
+              autoComplete="name"
+              type="text"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              placeholder="Enter your name"
+              className="w-full rounded-xl border border-gray-300 bg-gray-50 px-4 py-3 text-gray-900 outline-none placeholder:text-gray-400 focus:border-yellow-400 focus:ring-1 focus:ring-yellow-400"
+            />
+          </div>
+
+          <div className="mt-4">
+            <label
+              htmlFor="contact-email"
+              className="mb-2 block text-sm font-semibold text-gray-800"
+            >
+              Email
+            </label>
+
+            <input
+              id="contact-email"
+              required
+              autoComplete="email"
+              type="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              placeholder="Enter your email"
+              className="w-full rounded-xl border border-gray-300 bg-gray-50 px-4 py-3 text-gray-900 outline-none placeholder:text-gray-400 focus:border-yellow-400 focus:ring-1 focus:ring-yellow-400"
+            />
+          </div>
+
+          <div className="mt-4">
+            <label
+              htmlFor="contact-phone"
+              className="mb-2 block text-sm font-semibold text-gray-800"
+            >
+              Phone Number
+            </label>
+
+            <input
+              id="contact-phone"
+              required
+              autoComplete="tel"
+              type="tel"
+              name="phone"
+              value={formData.phone}
+              onChange={handleChange}
+              placeholder="Enter your phone number"
+              className="w-full rounded-xl border border-gray-300 bg-gray-50 px-4 py-3 text-gray-900 outline-none placeholder:text-gray-400 focus:border-yellow-400 focus:ring-1 focus:ring-yellow-400"
+            />
+          </div>
+
+          <div className="mt-4">
+            <label
+              htmlFor="contact-message"
+              className="mb-2 block text-sm font-semibold text-gray-800"
+            >
+              Message
+            </label>
+
+            <textarea
+              id="contact-message"
+              required
+              rows={5}
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
+              placeholder="Write your message"
+              className="w-full resize-none rounded-xl border border-gray-300 bg-gray-50 px-4 py-3 text-gray-900 outline-none placeholder:text-gray-400 focus:border-yellow-400 focus:ring-1 focus:ring-yellow-400"
+            />
+          </div>
+
+          <button
+            type="submit"
+            disabled={loading}
+            className={`mt-5 flex w-full items-center justify-center gap-2 rounded-xl px-5 py-3.5 font-bold text-gray-950 transition ${
+              loading
+                ? "cursor-not-allowed bg-gray-400"
+                : "bg-yellow-400 hover:bg-yellow-300"
+            }`}
+          >
+            <span>
+              {loading ? "Sending..." : "Send Message"}
+            </span>
+
+            <Send
+              size={18}
+              aria-hidden="true"
+            />
+          </button>
+
+          <p className="mt-4 text-center text-xs leading-5 text-gray-500">
+            Please provide accurate information when submitting your
+            666RS Game enquiry.
+          </p>
+
+        </form>
+      </div>
     </section>
   );
 }

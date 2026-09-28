@@ -4,8 +4,6 @@ import { useEffect } from "react";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 
-
-
 import Home from "./Home/Home";
 import AboutUs from "./AboutUs/AboutUs";
 import Contact from "./Contact/Contact";
@@ -16,28 +14,38 @@ function ScrollToTop() {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "instant",
+    });
   }, [pathname]);
 
   return null;
 }
 
-export default function App() {
+function App() {
   return (
     <BrowserRouter>
       <ScrollToTop />
 
       <Header />
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about-us" element={<AboutUs />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/download" element={<Download />} />
-      </Routes>
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/download" element={<Download />} />
+
+          <Route path="*" element={<Home />} />
+        </Routes>
+      </main>
 
       <Footer />
     </BrowserRouter>
   );
 }
+
+export default App;
