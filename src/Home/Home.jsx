@@ -7,7 +7,7 @@ import ContentSection from "./ContentSection";
 function Home() {
   const canonicalUrl = "https://666rspak.com/";
 
-  const title = "666RS Game Pakistan – Download, Features & Gaming Guide";
+  const title = "666RS Game – Download APK & Play Online in Pakistan";
 
   const description =
     "Explore 666RS Game Pakistan information, mobile access, download guidance, gaming features, account resources and useful 666RS gaming guides.";

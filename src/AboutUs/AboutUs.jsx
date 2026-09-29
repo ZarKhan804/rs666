@@ -9,7 +9,7 @@ export default function AboutUs() {
     <>
       <Helmet>
         <title>
-          About 666RS Game | 666RS Game Pakistan & Online Gaming Information
+         About 666RS Game – Pakistan Gaming Platform Information
         </title>
 
         <meta

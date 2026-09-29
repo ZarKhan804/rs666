@@ -7,7 +7,7 @@ function Contact() {
   return (
     <>
       <Helmet>
-        <title>666RS Game Contact | Support & Assistance</title>
+        <title>Contact 666RS – Pakistan Game Support Information</title>
 
         <meta
           name="description"

@@ -8,7 +8,7 @@ export default function Download() {
   return (
     <>
       <Helmet>
-        <title>666RS Game Download | 666RS APK, App & Mobile Access</title>
+        <title>666RS Game Download – Latest APK for Android in Pakistan</title>
 
         <meta
           name="description"
