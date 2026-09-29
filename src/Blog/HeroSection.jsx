@@ -6,7 +6,10 @@ export default function HeroSection() {
       aria-labelledby="blog-666rs-heading"
       className="relative overflow-hidden bg-gray-200 text-gray-900"
     >
-      <div className="pointer-events-none absolute inset-0">
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0"
+      >
         <div className="absolute left-1/2 top-[-180px] h-[500px] w-[500px] -translate-x-1/2 rounded-full bg-yellow-400/20 blur-[120px]" />
 
         <div className="absolute left-[-150px] top-1/2 h-[350px] w-[350px] -translate-y-1/2 rounded-full bg-amber-500/15 blur-[100px]" />
@@ -37,17 +40,14 @@ export default function HeroSection() {
             </h1>
 
             <p className="mx-auto mt-6 max-w-3xl text-base leading-8 text-gray-700 sm:text-lg">
-              Explore useful information about 666RS Game, 666RS Game
-              Pakistan, 666RS Online, 666RS APK, 666RS App, game access,
-              account topics, payments, mobile gaming and responsible gaming
-              resources.
+              Explore practical information about the 666RS platform,
+              mobile access, application topics, account guidance, gaming
+              resources and related website information.
             </p>
 
             <p className="mx-auto mt-4 max-w-3xl text-sm leading-7 text-gray-600 sm:text-base">
-              This 666RS Game Blog brings related platform topics together in
-              one place so visitors can understand available information,
-              mobile access options, account guidance and general gaming
-              resources.
+              Browse the guides below to learn about commonly searched
+              platform topics and find relevant sections of the website.
             </p>
 
             <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
@@ -67,15 +67,47 @@ export default function HeroSection() {
               </Link>
             </div>
 
-            <div className="mt-9 grid grid-cols-1 gap-4 sm:grid-cols-3">
+            <nav
+              aria-label="Blog navigation"
+              className="mt-8 flex flex-wrap justify-center gap-3"
+            >
+              <Link
+                to="/"
+                className="rounded-xl border border-gray-300 bg-white px-5 py-3 text-sm font-bold text-gray-800 transition hover:-translate-y-1 hover:border-yellow-500 hover:text-yellow-700"
+              >
+                Home
+              </Link>
 
+              <Link
+                to="/about-us"
+                className="rounded-xl border border-gray-300 bg-white px-5 py-3 text-sm font-bold text-gray-800 transition hover:-translate-y-1 hover:border-yellow-500 hover:text-yellow-700"
+              >
+                About
+              </Link>
+
+              <Link
+                to="/download"
+                className="rounded-xl border border-gray-300 bg-white px-5 py-3 text-sm font-bold text-gray-800 transition hover:-translate-y-1 hover:border-yellow-500 hover:text-yellow-700"
+              >
+                Download
+              </Link>
+
+              <Link
+                to="/contact"
+                className="rounded-xl border border-gray-300 bg-white px-5 py-3 text-sm font-bold text-gray-800 transition hover:-translate-y-1 hover:border-yellow-500 hover:text-yellow-700"
+              >
+                Contact
+              </Link>
+            </nav>
+
+            <div className="mt-9 grid grid-cols-1 gap-4 sm:grid-cols-3">
               <div className="rounded-2xl border border-gray-300 bg-white p-5 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-yellow-400 hover:shadow-md">
                 <h2 className="text-2xl font-extrabold text-yellow-600">
                   Gaming
                 </h2>
 
                 <p className="mt-1 text-sm text-gray-500">
-                  666RS Games & Platform
+                  Platform and game information
                 </p>
               </div>
 
@@ -85,7 +117,7 @@ export default function HeroSection() {
                 </h2>
 
                 <p className="mt-1 text-sm text-gray-500">
-                  App, APK & Download
+                  App, APK and access topics
                 </p>
               </div>
 
@@ -95,11 +127,11 @@ export default function HeroSection() {
                 </h2>
 
                 <p className="mt-1 text-sm text-gray-500">
-                  Account & Gaming Information
+                  Account and gaming resources
                 </p>
               </div>
-
             </div>
+
           </div>
         </div>
       </div>

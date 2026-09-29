@@ -3,48 +3,69 @@ import HeroSection from "./HeroSection";
 import ArticleSection from "./ArticleSection";
 import ContentSection from "./ContentSection";
 
+const SITE_URL = "https://666rs2fs.com";
+const PAGE_URL = `${SITE_URL}/blog`;
+const SOCIAL_IMAGE =
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB_WP8_RE8VQ3n5hRA6qQGwJ17yuor8qbHdXmmqvmLz4yzvNfun1p7YVcg&s=10";
+
+const title = "666RS Game Blog | Gaming Guides & Information";
+const description =
+  "Explore useful 666RS Game guides covering mobile access, APK information, account topics, games, payments, responsible gaming and related platform resources.";
+
 export default function Blog() {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    name: "666RS Game Blog",
+    description,
+    url: PAGE_URL,
+    publisher: {
+      "@type": "Organization",
+      name: "666RS",
+    },
+  };
+
   return (
     <>
       <Helmet>
-        <title>
-          666RS Game Blog | 666RS Pakistan, APK, Download & Gaming Guides
-        </title>
+        <html lang="en" />
 
-        <meta
-          name="description"
-          content="Explore the 666RS Game Blog for 666RS Pakistan information, 666RS APK, 666RS Game Download, 666RS App, Login, Registration, Games, Deposit, Withdrawal, JazzCash, Easypaisa and responsible gaming guides."
-        />
+        <title>{title}</title>
+
+        <meta name="description" content={description} />
 
         <meta
           name="robots"
-          content="index, follow, max-image-preview:large"
+          content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
         />
 
-        <link
-          rel="canonical"
-          href="https://666rs2fs.com/blog"
-        />
+        <meta name="author" content="666RS" />
 
+        <link rel="canonical" href={PAGE_URL} />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta property="og:url" content={PAGE_URL} />
+        <meta property="og:site_name" content="666RS" />
+        <meta property="og:image" content={SOCIAL_IMAGE} />
         <meta
-          property="og:title"
-          content="666RS Game Blog | Gaming Guides & Information"
+          property="og:image:alt"
+          content="666RS Game Blog and Gaming Guides"
         />
 
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={description} />
+        <meta name="twitter:image" content={SOCIAL_IMAGE} />
         <meta
-          property="og:description"
-          content="Read useful 666RS Game guides covering 666RS Pakistan, APK, Download, App, Login, Games, payments, account information and responsible gaming."
+          name="twitter:image:alt"
+          content="666RS Game Blog and Gaming Guides"
         />
 
-        <meta
-          property="og:type"
-          content="website"
-        />
-
-        <meta
-          property="og:url"
-          content="https://666rs2fs.com/blog"
-        />
+        <script type="application/ld+json">
+          {JSON.stringify(structuredData)}
+        </script>
       </Helmet>
 
       <main id="main-content" className="bg-gray-200 text-gray-900">

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function ArticleSection() {
   return (
     <section
@@ -7,7 +9,7 @@ export default function ArticleSection() {
     >
       <div className="mx-auto max-w-5xl">
 
-        <div className="mb-10 text-center">
+        <header className="mb-10 text-center">
           <span className="inline-block rounded-full border border-yellow-600/30 bg-white/40 px-4 py-2 text-xs font-bold uppercase tracking-[0.2em] text-yellow-800">
             666RS Gaming Guide
           </span>
@@ -20,11 +22,11 @@ export default function ArticleSection() {
           </h2>
 
           <p className="mx-auto mt-4 max-w-3xl text-base leading-8 text-gray-700">
-            Learn about 666RS Game, 666RS Pakistan, 666RS Online, mobile
-            access, APK information, account topics, available games,
-            payment-related searches and responsible gaming.
+            Learn about platform access, mobile applications, account
+            information, gaming topics, payment-related resources and
+            responsible gaming considerations.
           </p>
-        </div>
+        </header>
 
         <article className="rounded-3xl border border-gray-300 bg-white p-6 shadow-xl sm:p-9 lg:p-10">
 
@@ -34,19 +36,24 @@ export default function ArticleSection() {
             </h3>
 
             <p className="mt-4 text-base leading-8 text-gray-700">
-              <strong>666RS Game</strong> is a search term used by visitors
-              looking for information about an online gaming platform and its
-              related services. People researching 666RS may be interested in
-              platform access, available games, mobile options, account
-              information and general gaming resources.
+              666RS Game is a search term used by visitors looking for
+              information about an online gaming platform, its available
+              services and related access options. People may be interested in
+              game information, mobile access, account resources and general
+              platform guidance.
             </p>
 
             <p className="mt-4 text-base leading-8 text-gray-700">
-              The purpose of this blog is to organize commonly searched 666RS
-              topics into useful sections. Visitors can review information
-              about <strong>666RS Game Pakistan</strong>, 666RS Online,
-              666RS App, 666RS APK, download information, login, registration
-              and other platform-related subjects.
+              This blog organizes those topics into clear sections so visitors
+              can find relevant information without having to search through
+              unrelated pages. For a broader introduction, visit the{" "}
+              <Link
+                to="/about-us"
+                className="font-semibold text-yellow-600 underline decoration-yellow-400 underline-offset-4 hover:text-yellow-700"
+              >
+                About 666RS Game
+              </Link>{" "}
+              page.
             </p>
           </section>
 
@@ -56,11 +63,10 @@ export default function ArticleSection() {
             </h3>
 
             <p className="mt-4 text-base leading-8 text-gray-700">
-              Visitors searching for <strong>666RS Game Pakistan</strong> may
-              want to understand how the platform can be accessed, what
-              features are available and which mobile or browser options may
-              be supported. Platform availability and conditions can change,
-              so current information should always be reviewed before use.
+              Visitors searching for 666RS Game Pakistan may want information
+              about platform access, available features and mobile browsing.
+              Availability, terms and service conditions can change, so current
+              information should be checked before using any gaming service.
             </p>
           </section>
 
@@ -70,11 +76,10 @@ export default function ArticleSection() {
             </h3>
 
             <p className="mt-4 text-base leading-8 text-gray-700">
-              <strong>666RS Online</strong> refers to searches related to
-              accessing 666RS through an internet-connected device. A
-              responsive platform can allow visitors to browse gaming
-              information using different screen sizes, including smartphones,
-              tablets and desktop computers.
+              Online access allows visitors to browse platform information
+              through an internet-connected device. A responsive website can
+              make informational pages easier to use on smartphones, tablets
+              and desktop computers.
             </p>
           </section>
 
@@ -84,11 +89,21 @@ export default function ArticleSection() {
             </h3>
 
             <p className="mt-4 text-base leading-8 text-gray-700">
-              <strong>666RS Game Download</strong> is another topic commonly
-              associated with mobile access. Before downloading an application,
-              users should verify the source, application version, requested
-              permissions and device compatibility. Unknown application files
-              can create security risks.
+              Visitors researching 666RS Game Download should verify the source
+              of any application, its version, requested permissions and device
+              compatibility before installation. Files obtained outside
+              recognized application stores require additional care.
+            </p>
+
+            <p className="mt-4 text-base leading-8 text-gray-700">
+              For more detailed access information, visit the{" "}
+              <Link
+                to="/download"
+                className="font-semibold text-yellow-600 underline decoration-yellow-400 underline-offset-4 hover:text-yellow-700"
+              >
+                666RS Download Guide
+              </Link>
+              .
             </p>
           </section>
 
@@ -98,25 +113,23 @@ export default function ArticleSection() {
             </h3>
 
             <p className="mt-4 text-base leading-8 text-gray-700">
-              The term <strong>666RS APK</strong> generally relates to Android
-              application access. Android users should carefully check where
-              an APK comes from before installing it. Application permissions,
-              file authenticity and device security should be considered
-              before installation.
+              The term 666RS APK generally refers to Android application
+              access. Before installing an APK, users should check its source,
+              authenticity, version information, permissions and compatibility
+              with their device.
             </p>
           </section>
 
           <section className="mb-10">
             <h3 className="text-2xl font-black text-gray-950">
-              666RS App
+              666RS App and Mobile Access
             </h3>
 
             <p className="mt-4 text-base leading-8 text-gray-700">
-              The <strong>666RS App</strong> topic is relevant to visitors who
-              prefer mobile access. Application features may vary according to
-              the current version, operating system and device, so users
-              should check the latest available information before installing
-              or using an application.
+              Visitors interested in the 666RS App may be looking for
+              information about mobile access and application features. These
+              details can vary according to the current application version,
+              operating system and device requirements.
             </p>
           </section>
 
@@ -126,11 +139,11 @@ export default function ArticleSection() {
             </h3>
 
             <p className="mt-4 text-base leading-8 text-gray-700">
-              Visitors searching for <strong>666RS Registration</strong> may
-              want to understand how account access works. Registration
-              requirements can depend on the current platform. Users should
-              provide accurate information where required and keep their
-              account credentials private.
+              Visitors researching 666RS Registration may want to understand
+              the general account creation process. Registration requirements
+              depend on the current platform. Users should provide information
+              only through trusted access pages and keep account credentials
+              private.
             </p>
           </section>
 
@@ -140,24 +153,23 @@ export default function ArticleSection() {
             </h3>
 
             <p className="mt-4 text-base leading-8 text-gray-700">
-              <strong>666RS Login</strong> information can help returning users
-              understand account access. Login credentials, passwords, OTP
-              codes and other private account information should never be
-              shared with unknown individuals or unofficial contacts.
+              666RS Login information is relevant to returning users who need
+              account access. Passwords, OTP codes, PINs and other private
+              credentials should never be shared with unknown individuals or
+              unofficial contacts.
             </p>
           </section>
 
           <section className="mb-10">
             <h3 className="text-2xl font-black text-gray-950">
-              Explore 666RS Games
+              666RS Games
             </h3>
 
             <p className="mt-4 text-base leading-8 text-gray-700">
-              <strong>666RS Games</strong> refers to the gaming options that
-              visitors may explore through the platform. Different users can
-              have different preferences, so available categories and game
-              information should be reviewed before selecting any particular
-              option.
+              Visitors researching 666RS Games may want to understand the
+              available gaming categories and platform features. Game
+              availability can change, so visitors should review the current
+              information supplied by the relevant service before participating.
             </p>
           </section>
 
@@ -167,11 +179,10 @@ export default function ArticleSection() {
             </h3>
 
             <p className="mt-4 text-base leading-8 text-gray-700">
-              Visitors searching for <strong>666RS Deposit</strong> should
-              review the payment information displayed by the relevant
-              platform. Payment methods, requirements, limits and availability
-              may change. Users should verify transaction details before
-              confirming a payment.
+              Visitors searching for 666RS Deposit information should review
+              the payment instructions, limits, requirements and supported
+              methods shown by the relevant platform. Transaction details
+              should be checked carefully before confirmation.
             </p>
           </section>
 
@@ -181,11 +192,10 @@ export default function ArticleSection() {
             </h3>
 
             <p className="mt-4 text-base leading-8 text-gray-700">
-              <strong>666RS JazzCash</strong> is a payment-related search term
-              associated with visitors looking for local mobile payment
-              information. If a payment method is currently supported, users
-              should follow the instructions shown by the relevant service.
-              PINs, passwords and verification codes should remain private.
+              666RS JazzCash is a payment-related search topic. If this method
+              is currently supported, users should follow the instructions
+              supplied by the relevant service and keep PINs, passwords and
+              verification codes private.
             </p>
           </section>
 
@@ -195,10 +205,9 @@ export default function ArticleSection() {
             </h3>
 
             <p className="mt-4 text-base leading-8 text-gray-700">
-              Another payment-related search is <strong>666RS Easypaisa</strong>.
-              Users interested in this method should first verify whether it
-              is currently supported and carefully review the transaction
-              information before confirming a payment.
+              Another payment-related search topic is 666RS Easypaisa. Users
+              should first confirm whether the method is currently supported
+              and verify transaction details before completing a payment.
             </p>
           </section>
 
@@ -208,11 +217,10 @@ export default function ArticleSection() {
             </h3>
 
             <p className="mt-4 text-base leading-8 text-gray-700">
-              <strong>666RS Withdrawal</strong> is an important account topic
-              for visitors researching platform processes. Current withdrawal
-              requirements, processing conditions, available methods and limits
-              should always be checked through the relevant platform because
-              such conditions can change.
+              Visitors researching 666RS Withdrawal should check the current
+              requirements, processing conditions, available methods and
+              applicable limits through the relevant platform because these
+              conditions may change.
             </p>
           </section>
 
@@ -222,10 +230,10 @@ export default function ArticleSection() {
             </h3>
 
             <p className="mt-4 text-base leading-8 text-gray-700">
-              Account security should remain an important consideration when
-              using any online service. Users should check the website address,
-              avoid unknown download links and never share passwords, PINs or
-              verification codes with other people.
+              Account security is important when using any online service.
+              Users should verify the website address, avoid unknown download
+              sources and never share passwords, PINs or verification codes
+              with other people.
             </p>
           </section>
 

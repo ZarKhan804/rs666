@@ -31,7 +31,7 @@ function App() {
 
       <Header />
 
-      <main>
+      <main id="main-content">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about-us" element={<AboutUs />} />
@@ -39,7 +39,27 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/download" element={<Download />} />
 
-          <Route path="*" element={<Home />} />
+          <Route
+            path="*"
+            element={
+              <div className="min-h-[60vh] bg-gray-200 px-6 py-20 text-center">
+                <h1 className="text-4xl font-black text-gray-900">
+                  Page Not Found
+                </h1>
+
+                <p className="mx-auto mt-4 max-w-xl text-gray-600">
+                  The page you are looking for does not exist.
+                </p>
+
+                <a
+                  href="/"
+                  className="mt-8 inline-flex rounded-xl bg-yellow-400 px-6 py-3 font-bold text-gray-950 transition hover:bg-yellow-300"
+                >
+                  Go to Home
+                </a>
+              </div>
+            }
+          />
         </Routes>
       </main>
 

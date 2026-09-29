@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 
 function HeroSection() {
@@ -12,7 +11,10 @@ function HeroSection() {
       aria-labelledby="666rs-home-title"
       className="relative overflow-hidden bg-gray-200 text-gray-900"
     >
-      <div aria-hidden="true" className="pointer-events-none absolute inset-0">
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0"
+      >
         <div className="absolute left-1/2 top-[-180px] h-[400px] w-[400px] -translate-x-1/2 rounded-full bg-yellow-400/15 blur-[110px]" />
 
         <div className="absolute -left-32 top-1/2 h-[280px] w-[280px] -translate-y-1/2 rounded-full bg-amber-500/10 blur-[100px]" />
@@ -31,6 +33,7 @@ function HeroSection() {
 
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex min-h-0 flex-col items-center py-7 sm:py-9 lg:py-10">
+
           <div className="mb-3 inline-flex rounded-full border border-yellow-600/30 bg-white/50 px-4 py-1.5 shadow-sm backdrop-blur-md">
             <span className="text-[10px] font-extrabold uppercase tracking-[0.2em] text-yellow-800 sm:text-xs">
               Welcome to 666RS Game
@@ -39,7 +42,7 @@ function HeroSection() {
 
           <h1
             id="666rs-home-title"
-            className="max-w-5xl text-center text-3xl font-black leading-tight tracking-tight text-gray-900 sm:text-4xl md:text-5xl lg:text-5xl"
+            className="max-w-5xl text-center text-3xl font-black leading-tight tracking-tight text-gray-900 sm:text-4xl md:text-5xl"
           >
             666RS Game Pakistan
 
@@ -49,9 +52,8 @@ function HeroSection() {
           </h1>
 
           <p className="mx-auto mt-3 max-w-2xl text-center text-sm leading-6 text-gray-700 sm:text-base">
-            Discover 666RS Game, explore mobile gaming information, learn about
-            666RS App access, and find useful resources for visitors looking for
-            a simple way to reach the platform.
+            Explore 666RS Game information, mobile access, download guidance,
+            platform features, account resources and useful gaming guides.
           </p>
 
           <div className="relative mt-5 w-full max-w-3xl">
@@ -64,14 +66,14 @@ function HeroSection() {
               href={gameUrl}
               target="_blank"
               rel="nofollow sponsored noopener noreferrer"
-              aria-label="Access 666RS Game"
+              aria-label="Explore 666RS Game"
               className="group relative block"
             >
               <div className="relative overflow-hidden rounded-2xl border border-yellow-500/30 bg-gray-300/80 p-1.5 shadow-xl transition-all duration-300 group-hover:-translate-y-1 group-hover:border-yellow-500/70 group-hover:shadow-yellow-500/20">
                 <div className="relative overflow-hidden rounded-xl">
                   <img
                     src={gameImage}
-                    alt="666RS Game Pakistan online gaming platform"
+                    alt="666RS Game Pakistan online gaming information"
                     width="1000"
                     height="420"
                     loading="eager"
@@ -104,7 +106,7 @@ function HeroSection() {
 
           <nav
             aria-label="666RS website navigation"
-            className="mt-4 flex flex-wrap items-center justify-center gap-2"
+            className="mt-5 flex flex-wrap items-center justify-center gap-2"
           >
             <Link
               to="/"
@@ -117,7 +119,7 @@ function HeroSection() {
               to="/about"
               className="rounded-lg border border-gray-700/20 bg-white/50 px-4 py-2 text-xs font-bold text-gray-800 backdrop-blur-sm transition hover:border-yellow-500/50 hover:bg-yellow-400/20 hover:text-yellow-800"
             >
-              About
+              About 666RS
             </Link>
 
             <Link
@@ -143,9 +145,8 @@ function HeroSection() {
           </nav>
 
           <p className="mt-5 max-w-2xl text-center text-xs leading-5 text-gray-600">
-            Learn more about 666RS Game, mobile access, app information and
-            related gaming resources through the pages available on this
-            website.
+            Browse 666RS Game information, mobile access resources, gaming
+            guides and useful website pages from one place.
           </p>
         </div>
       </div>
@@ -154,4 +155,3 @@ function HeroSection() {
 }
 
 export default HeroSection;
-

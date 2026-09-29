@@ -1,7 +1,7 @@
 
 import { Link } from "react-router-dom";
 
-function ArticleSection() {
+export default function ArticleSection() {
   return (
     <section
       id="download-article"
@@ -227,6 +227,4 @@ function ArticleSection() {
     </section>
   );
 }
-
-export default ArticleSection;
 

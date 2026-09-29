@@ -40,7 +40,10 @@ export default function AboutUs() {
         <meta property="og:type" content="website" />
       </Helmet>
 
-      <main id="main-content" className="bg-gray-200">
+      <main
+        id="main-content"
+        className="bg-gray-200"
+      >
         <HeroSection />
         <ArticleSection />
         <ContentSection />

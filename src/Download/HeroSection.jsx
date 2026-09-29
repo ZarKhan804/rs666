@@ -1,4 +1,7 @@
-function HeroSection() {
+
+import { Link } from "react-router-dom";
+
+export default function HeroSection() {
   const gameImage =
     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB_WP8_RE8VQ3n5hRA6qQGwJ17yuor8qbHdXmmqvmLz4yzvNfun1p7YVcg&s=10";
 
@@ -9,7 +12,6 @@ function HeroSection() {
       aria-labelledby="download-title"
       className="relative overflow-hidden bg-gray-200 text-gray-950"
     >
-      {/* Background Effects */}
       <div
         aria-hidden="true"
         className="pointer-events-none absolute inset-0"
@@ -21,22 +23,17 @@ function HeroSection() {
         <div className="absolute -bottom-32 -right-32 h-[300px] w-[300px] rounded-full bg-yellow-300/10 blur-[100px]" />
       </div>
 
-      {/* Top Accent */}
       <div className="relative h-[2px] w-full bg-gradient-to-r from-transparent via-yellow-500 to-transparent" />
 
-      {/* Main Container */}
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-
         <div className="flex min-h-0 flex-col items-center py-7 sm:py-9 lg:py-10">
 
-          {/* Small Label */}
           <div className="mb-3 inline-flex rounded-full border border-yellow-600/30 bg-white/30 px-4 py-1.5 shadow-sm backdrop-blur-md">
             <span className="text-[10px] font-extrabold uppercase tracking-[0.2em] text-yellow-800 sm:text-xs">
               666RS Game Download
             </span>
           </div>
 
-          {/* Main Heading */}
           <h1
             id="download-title"
             className="max-w-4xl text-center text-3xl font-black leading-tight tracking-tight text-gray-950 sm:text-4xl md:text-5xl lg:text-5xl"
@@ -47,22 +44,18 @@ function HeroSection() {
             </span>
           </h1>
 
-          {/* Short Description */}
           <p className="mx-auto mt-3 max-w-2xl text-center text-sm leading-6 text-gray-700 sm:text-base">
             Access 666RS Game Download, mobile access, 666RS APK and
             gaming information from one simple page.
           </p>
 
-          {/* Game Image */}
           <div className="relative mt-5 w-full max-w-3xl">
 
-            {/* Image Glow */}
             <div
               aria-hidden="true"
               className="absolute -inset-3 rounded-3xl bg-yellow-400/15 blur-2xl"
             />
 
-            {/* Clickable Image */}
             <a
               href={gameUrl}
               target="_blank"
@@ -85,7 +78,6 @@ function HeroSection() {
                     className="block h-[150px] w-full object-cover object-center transition duration-500 group-hover:scale-[1.02] sm:h-[190px] md:h-[220px] lg:h-[240px]"
                   />
 
-                  {/* Image Overlay */}
                   <div className="absolute inset-0 flex items-center justify-center bg-black/5 transition duration-300 group-hover:bg-black/10">
                     <span className="rounded-full bg-white/85 px-4 py-2 text-xs font-extrabold text-gray-900 shadow-lg backdrop-blur-sm sm:text-sm">
                       Click to Download
@@ -97,7 +89,6 @@ function HeroSection() {
             </a>
           </div>
 
-          {/* Download Button */}
           <div className="mt-5 flex flex-col items-center justify-center gap-3 sm:flex-row">
 
             <a
@@ -112,40 +103,39 @@ function HeroSection() {
 
           </div>
 
-          {/* Internal Navigation */}
-          <div className="mt-4 flex flex-wrap items-center justify-center gap-2">
-
-            <a
-              href="/"
+          <nav
+            aria-label="Download page navigation"
+            className="mt-4 flex flex-wrap items-center justify-center gap-2"
+          >
+            <Link
+              to="/"
               className="rounded-lg border border-gray-700/20 bg-white/40 px-4 py-2 text-xs font-bold text-gray-800 backdrop-blur-sm transition hover:border-yellow-500/50 hover:bg-yellow-400/20 hover:text-yellow-800"
             >
               Home
-            </a>
+            </Link>
 
-            <a
-              href="/about"
+            <Link
+              to="/about-us"
               className="rounded-lg border border-gray-700/20 bg-white/40 px-4 py-2 text-xs font-bold text-gray-800 backdrop-blur-sm transition hover:border-yellow-500/50 hover:bg-yellow-400/20 hover:text-yellow-800"
             >
               About Us
-            </a>
+            </Link>
 
-            <a
-              href="/blog"
+            <Link
+              to="/blog"
               className="rounded-lg border border-gray-700/20 bg-white/40 px-4 py-2 text-xs font-bold text-gray-800 backdrop-blur-sm transition hover:border-yellow-500/50 hover:bg-yellow-400/20 hover:text-yellow-800"
             >
               Blog
-            </a>
+            </Link>
 
-            <a
-              href="/contact"
+            <Link
+              to="/contact"
               className="rounded-lg border border-gray-700/20 bg-white/40 px-4 py-2 text-xs font-bold text-gray-800 backdrop-blur-sm transition hover:border-yellow-500/50 hover:bg-yellow-400/20 hover:text-yellow-800"
             >
               Contact
-            </a>
+            </Link>
+          </nav>
 
-          </div>
-
-          {/* Small Bottom Information */}
           <p className="mt-4 max-w-2xl text-center text-xs leading-5 text-gray-600">
             Review the available information and device requirements before
             accessing the 666RS gaming platform.
@@ -154,7 +144,6 @@ function HeroSection() {
         </div>
       </div>
 
-      {/* Bottom Accent */}
       <div
         aria-hidden="true"
         className="absolute bottom-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-yellow-600/50 to-transparent"
@@ -163,4 +152,3 @@ function HeroSection() {
   );
 }
 
-export default HeroSection;

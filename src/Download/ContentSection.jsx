@@ -1,7 +1,7 @@
 
 import { Link } from "react-router-dom";
 
-function ContentSection() {
+export default function ContentSection() {
   return (
     <section
       aria-labelledby="download-content-title"
@@ -159,12 +159,9 @@ function ContentSection() {
             </section>
 
           </div>
-
         </article>
       </div>
     </section>
   );
 }
-
-export default ContentSection;
 
