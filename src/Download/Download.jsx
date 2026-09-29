@@ -1,52 +1,58 @@
-
 import { Helmet } from "react-helmet-async";
 import HeroSection from "./HeroSection";
 import ArticleSection from "./ArticleSection";
 import ContentSection from "./ContentSection";
 
-export default function Download() {
+function Download() {
+  const canonicalUrl = "https://666rspak.com/download";
+
+  const title =
+    "666RS Game Download – Latest APK for Android in Pakistan";
+
+  const description =
+    "Learn about 666RS Game Download, 666RS APK, mobile access, app information, Android compatibility, account access and safe gaming resources.";
+
+  const socialImage =
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB_WP8_RE8VQ3n5hRA6qQGwJ17yuor8qbHdXmmqvmLz4yzvNfun1p7YVcg&s=10";
+
   return (
     <>
       <Helmet>
-        <title>666RS Game Download – Latest APK for Android in Pakistan</title>
+        <title>{title}</title>
 
-        <meta
-          name="description"
-          content="Learn about 666RS Game Download, 666RS APK, mobile access, app information, Android compatibility, account access and safe gaming resources."
-        />
+        <meta name="description" content={description} />
 
         <meta
           name="robots"
-          content="index, follow, max-image-preview:large"
+          content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
         />
 
-        <link
-          rel="canonical"
-          href="https://666rs2fs.com/download"
-        />
+        <meta name="author" content="666RS" />
 
+        <link rel="canonical" href={canonicalUrl} />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta property="og:url" content={canonicalUrl} />
+        <meta property="og:site_name" content="666RS" />
+        <meta property="og:image" content={socialImage} />
         <meta
-          property="og:title"
-          content="666RS Game Download | 666RS APK & Mobile Access"
+          property="og:image:alt"
+          content="666RS Game Download and APK"
         />
 
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={description} />
+        <meta name="twitter:image" content={socialImage} />
         <meta
-          property="og:description"
-          content="Explore 666RS Game Download information, mobile access, APK guidance, app information and useful platform resources."
-        />
-
-        <meta
-          property="og:type"
-          content="website"
-        />
-
-        <meta
-          property="og:url"
-          content="https://666rs2fs.com/download"
+          name="twitter:image:alt"
+          content="666RS Game Download and APK"
         />
       </Helmet>
 
-      <main id="main-content " className="bg-gray-200">
+      <main id="main-content" className="bg-gray-200">
         <HeroSection />
         <ArticleSection />
         <ContentSection />
@@ -55,3 +61,4 @@ export default function Download() {
   );
 }
 
+export default Download;

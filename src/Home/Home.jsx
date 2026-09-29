@@ -1,5 +1,4 @@
 import { Helmet } from "react-helmet-async";
-
 import HeroSection from "./HeroSection";
 import ArticleSection from "./ArticleSection";
 import ContentSection from "./ContentSection";
@@ -18,8 +17,6 @@ function Home() {
   return (
     <>
       <Helmet>
-        <html lang="en" />
-
         <title>{title}</title>
 
         <meta name="description" content={description} />
@@ -45,9 +42,13 @@ function Home() {
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />
         <meta name="twitter:image" content={socialImage} />
+        <meta
+          name="twitter:image:alt"
+          content="666RS Game Pakistan"
+        />
       </Helmet>
 
-      <main className="bg-gray-200">
+      <main id="main-content" className="bg-gray-200">
         <HeroSection />
         <ArticleSection />
         <ContentSection />

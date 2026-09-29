@@ -3,12 +3,15 @@ import HeroSection from "./HeroSection";
 import ArticleSection from "./ArticleSection";
 import ContentSection from "./ContentSection";
 
-const SITE_URL = "https://666rs2fs.com";
+const SITE_URL = "https://666rspak.com";
 const PAGE_URL = `${SITE_URL}/blog`;
+
 const SOCIAL_IMAGE =
   "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB_WP8_RE8VQ3n5hRA6qQGwJ17yuor8qbHdXmmqvmLz4yzvNfun1p7YVcg&s=10";
 
-const title = "666RS Game Blog – Download, Login & Registration Guides";
+const title =
+  "666RS Game Blog – Download, Login & Registration Guides";
+
 const description =
   "Explore useful 666RS Game guides covering mobile access, APK information, account topics, games, payments, responsible gaming and related platform resources.";
 
@@ -28,8 +31,6 @@ export default function Blog() {
   return (
     <>
       <Helmet>
-        <html lang="en" />
-
         <title>{title}</title>
 
         <meta name="description" content={description} />
