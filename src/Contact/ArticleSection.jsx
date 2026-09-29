@@ -4,7 +4,7 @@ const ArticleSection = () => {
   return (
     <section
       aria-labelledby="666rs-contact-article"
-      className="bg-gray-400 py-8 sm:py-12"
+      className="bg-gray-200 py-8 sm:py-12"
     >
       <div className="mx-auto max-w-5xl px-5 lg:px-8">
 

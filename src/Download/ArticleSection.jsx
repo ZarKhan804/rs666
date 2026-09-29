@@ -6,7 +6,7 @@ function ArticleSection() {
     <section
       id="download-article"
       aria-labelledby="download-article-title"
-      className="bg-gray-400 px-4 py-14 text-gray-900 sm:px-6 lg:px-8"
+      className="bg-gray-200 px-4 py-14 text-gray-900 sm:px-6 lg:px-8"
     >
       <div className="mx-auto max-w-5xl">
 

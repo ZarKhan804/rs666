@@ -1,3 +1,4 @@
+
 import { Helmet } from "react-helmet-async";
 import HeroSection from "./HeroSection";
 import ArticleSection from "./ArticleSection";
@@ -33,38 +34,47 @@ function Home() {
         <link rel="canonical" href={canonicalUrl} />
 
         <meta property="og:type" content="website" />
+
         <meta
           property="og:title"
           content="666RS Game – Download, Features & Gaming Guide 2026"
         />
+
         <meta
           property="og:description"
           content="Learn about 666RS Game, mobile access, APK information, game features, registration guidance, and useful gaming resources."
         />
+
         <meta property="og:url" content={canonicalUrl} />
+
         <meta property="og:site_name" content="666RS" />
+
         <meta
           property="og:image"
           content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB_WP8_RE8VQ3n5hRA6qQGwJ17yuor8qbHdXmmqvmLz4yzvNfun1p7YVcg&s=10"
         />
+
         <meta property="og:image:alt" content="666RS Game" />
 
         <meta name="twitter:card" content="summary_large_image" />
+
         <meta
           name="twitter:title"
           content="666RS Game – Download, Features & Gaming Guide 2026"
         />
+
         <meta
           name="twitter:description"
           content="Explore 666RS Game features, mobile access, APK information, registration guidance, and gaming resources."
         />
+
         <meta
           name="twitter:image"
           content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB_WP8_RE8VQ3n5hRA6qQGwJ17yuor8qbHdXmmqvmLz4yzvNfun1p7YVcg&s=10"
         />
       </Helmet>
 
-      <main>
+      <main className="bg-gray-200">
         <HeroSection />
         <ArticleSection />
         <ContentSection />
@@ -74,3 +84,4 @@ function Home() {
 }
 
 export default Home;
+

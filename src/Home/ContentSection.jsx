@@ -1,22 +1,23 @@
+
 import { Link } from "react-router-dom";
 
 function ContentSection() {
   return (
     <section
       aria-labelledby="666rs-content-title"
-      className="bg-gray-400 py-14 sm:py-20"
+      className="bg-gray-200 py-14 text-gray-900 sm:py-20"
     >
       <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
-        <article className="rounded-3xl border border-gray-300 bg-gray-300 p-6 shadow-sm sm:p-8 lg:p-10">
+        <article className="rounded-3xl border border-gray-300 bg-gray-200 p-6 shadow-sm sm:p-8 lg:p-10">
           <header>
             <h2
               id="666rs-content-title"
-              className="text-3xl font-black tracking-tight text-gray-950 sm:text-4xl"
+              className="text-3xl font-black tracking-tight text-gray-900 sm:text-4xl"
             >
               666RS Game Pakistan – Complete Gaming Information
             </h2>
 
-            <p className="mt-5 text-base leading-8 text-gray-800">
+            <p className="mt-5 text-base leading-8 text-gray-900">
               If you are searching for <strong>666RS Game</strong>,{" "}
               <strong>666RS Game Download</strong>, <strong>666RS APK</strong>,{" "}
               <strong>666RS App</strong>, or{" "}
@@ -27,13 +28,12 @@ function ContentSection() {
           </header>
 
           <div className="mt-10 space-y-10">
-            {/* 666RS GAME DOWNLOAD */}
             <section>
-              <h3 className="text-2xl font-black text-gray-950">
+              <h3 className="text-2xl font-black text-gray-900">
                 666RS Game Download Information
               </h3>
 
-              <p className="mt-4 text-base leading-8 text-gray-800">
+              <p className="mt-4 text-base leading-8 text-gray-900">
                 Searching for <strong>666RS Game Download</strong> can lead to
                 different websites and download pages. Visitors looking for the{" "}
                 <strong>666RS Download</strong> should check the source,
@@ -45,13 +45,12 @@ function ContentSection() {
               </p>
             </section>
 
-            {/* APK */}
             <section>
-              <h3 className="text-2xl font-black text-gray-950">
+              <h3 className="text-2xl font-black text-gray-900">
                 666RS APK and Mobile Access
               </h3>
 
-              <p className="mt-4 text-base leading-8 text-gray-800">
+              <p className="mt-4 text-base leading-8 text-gray-900">
                 The term <strong>666RS APK Download</strong> is commonly used
                 when people search for an Android installation file. Users
                 researching the <strong>666RS APK Latest Version</strong> should
@@ -61,13 +60,12 @@ function ContentSection() {
               </p>
             </section>
 
-            {/* APP */}
             <section>
-              <h3 className="text-2xl font-black text-gray-950">
+              <h3 className="text-2xl font-black text-gray-900">
                 666RS App Information
               </h3>
 
-              <p className="mt-4 text-base leading-8 text-gray-800">
+              <p className="mt-4 text-base leading-8 text-gray-900">
                 Visitors searching for the <strong>666RS App</strong> may want
                 information about mobile access, installation, account features,
                 and general platform navigation. Before installing any
@@ -78,13 +76,12 @@ function ContentSection() {
               </p>
             </section>
 
-            {/* FEATURES */}
             <section>
-              <h3 className="text-2xl font-black text-gray-950">
+              <h3 className="text-2xl font-black text-gray-900">
                 666RS Game Features
               </h3>
 
-              <p className="mt-4 text-base leading-8 text-gray-800">
+              <p className="mt-4 text-base leading-8 text-gray-900">
                 Visitors researching <strong>666RS Game Features</strong> may be
                 interested in mobile compatibility, account access, available
                 games, navigation, platform information, and general gaming
@@ -94,13 +91,12 @@ function ContentSection() {
               </p>
             </section>
 
-            {/* ONLINE */}
             <section>
-              <h3 className="text-2xl font-black text-gray-950">
+              <h3 className="text-2xl font-black text-gray-900">
                 666RS Online Gaming Information
               </h3>
 
-              <p className="mt-4 text-base leading-8 text-gray-800">
+              <p className="mt-4 text-base leading-8 text-gray-900">
                 <strong>666RS Online</strong> searches generally relate to
                 accessing information about the platform through a browser or
                 mobile device. Visitors searching for{" "}
@@ -111,13 +107,12 @@ function ContentSection() {
               </p>
             </section>
 
-            {/* LOGIN */}
             <section>
-              <h3 className="text-2xl font-black text-gray-950">
+              <h3 className="text-2xl font-black text-gray-900">
                 666RS Login and Registration
               </h3>
 
-              <p className="mt-4 text-base leading-8 text-gray-800">
+              <p className="mt-4 text-base leading-8 text-gray-900">
                 Account registration and login procedures depend on the current
                 platform. Visitors searching for <strong>666RS Login</strong>{" "}
                 should use the access instructions supplied by the relevant
@@ -129,13 +124,12 @@ function ContentSection() {
               </p>
             </section>
 
-            {/* PAKISTAN */}
             <section>
-              <h3 className="text-2xl font-black text-gray-950">
+              <h3 className="text-2xl font-black text-gray-900">
                 666RS Game Pakistan Information
               </h3>
 
-              <p className="mt-4 text-base leading-8 text-gray-800">
+              <p className="mt-4 text-base leading-8 text-gray-900">
                 Users in Pakistan searching for{" "}
                 <strong>666RS Game Pakistan</strong> should consider local
                 requirements, age restrictions, financial risks, and the current
@@ -146,13 +140,12 @@ function ContentSection() {
               </p>
             </section>
 
-            {/* MOBILE */}
             <section>
-              <h3 className="text-2xl font-black text-gray-950">
+              <h3 className="text-2xl font-black text-gray-900">
                 666RS Mobile Game Experience
               </h3>
 
-              <p className="mt-4 text-base leading-8 text-gray-800">
+              <p className="mt-4 text-base leading-8 text-gray-900">
                 Mobile gaming depends on the device, browser or application,
                 network connection, and platform compatibility. Visitors
                 searching for <strong>666RS Mobile Game</strong> information
@@ -162,13 +155,12 @@ function ContentSection() {
               </p>
             </section>
 
-            {/* LATEST VERSION */}
             <section>
-              <h3 className="text-2xl font-black text-gray-950">
+              <h3 className="text-2xl font-black text-gray-900">
                 666RS Latest Version Information
               </h3>
 
-              <p className="mt-4 text-base leading-8 text-gray-800">
+              <p className="mt-4 text-base leading-8 text-gray-900">
                 Users searching for <strong>666RS Latest Version</strong> should
                 compare the version information provided by the relevant
                 platform before installing or updating the application. Version
@@ -178,13 +170,12 @@ function ContentSection() {
               </p>
             </section>
 
-            {/* INSTALLATION */}
             <section>
-              <h3 className="text-2xl font-black text-gray-950">
+              <h3 className="text-2xl font-black text-gray-900">
                 666RS APK Installation Guide
               </h3>
 
-              <p className="mt-4 text-base leading-8 text-gray-800">
+              <p className="mt-4 text-base leading-8 text-gray-900">
                 People searching for <strong>666RS APK Installation</strong>{" "}
                 should first confirm that their Android device supports the
                 required application version. Review the download source, file
@@ -194,13 +185,12 @@ function ContentSection() {
               </p>
             </section>
 
-            {/* RESPONSIBLE GAMING */}
             <section>
-              <h3 className="text-2xl font-black text-gray-950">
+              <h3 className="text-2xl font-black text-gray-900">
                 Responsible Gaming Information
               </h3>
 
-              <p className="mt-4 text-base leading-8 text-gray-800">
+              <p className="mt-4 text-base leading-8 text-gray-900">
                 Gaming involving money carries financial risk. There is no
                 guaranteed winning strategy, and users should not consider
                 gaming a guaranteed source of income. Review the rules and
@@ -209,13 +199,12 @@ function ContentSection() {
               </p>
             </section>
 
-            {/* INTERNAL LINKS */}
             <section>
-              <h3 className="text-2xl font-black text-gray-950">
+              <h3 className="text-2xl font-black text-gray-900">
                 Explore More 666RS Pages
               </h3>
 
-              <p className="mt-4 text-base leading-8 text-gray-800">
+              <p className="mt-4 text-base leading-8 text-gray-900">
                 Use the internal links below to continue exploring the 666RS
                 website without having to search for each section separately.
                 These pages provide additional information about the platform,
@@ -228,28 +217,28 @@ function ContentSection() {
               >
                 <Link
                   to="/about"
-                  className="rounded-xl border border-gray-400 bg-gray-200 p-5 font-bold text-gray-950 transition hover:-translate-y-1 hover:border-yellow-500 hover:bg-yellow-100"
+                  className="rounded-xl border border-gray-300 bg-gray-100 p-5 font-bold text-gray-900 transition duration-300 hover:-translate-y-1 hover:border-yellow-500 hover:bg-yellow-100"
                 >
                   About 666RS
                 </Link>
 
                 <Link
                   to="/blog"
-                  className="rounded-xl border border-gray-400 bg-gray-200 p-5 font-bold text-gray-950 transition hover:-translate-y-1 hover:border-yellow-500 hover:bg-yellow-100"
+                  className="rounded-xl border border-gray-300 bg-gray-100 p-5 font-bold text-gray-900 transition duration-300 hover:-translate-y-1 hover:border-yellow-500 hover:bg-yellow-100"
                 >
                   666RS Blog
                 </Link>
 
                 <Link
                   to="/contact"
-                  className="rounded-xl border border-gray-400 bg-gray-200 p-5 font-bold text-gray-950 transition hover:-translate-y-1 hover:border-yellow-500 hover:bg-yellow-100"
+                  className="rounded-xl border border-gray-300 bg-gray-100 p-5 font-bold text-gray-900 transition duration-300 hover:-translate-y-1 hover:border-yellow-500 hover:bg-yellow-100"
                 >
                   Contact 666RS
                 </Link>
 
                 <Link
                   to="/download"
-                  className="rounded-xl border border-gray-400 bg-gray-200 p-5 font-bold text-gray-950 transition hover:-translate-y-1 hover:border-yellow-500 hover:bg-yellow-100"
+                  className="rounded-xl border border-gray-300 bg-gray-100 p-5 font-bold text-gray-900 transition duration-300 hover:-translate-y-1 hover:border-yellow-500 hover:bg-yellow-100"
                 >
                   666RS Download Guide
                 </Link>
@@ -263,3 +252,4 @@ function ContentSection() {
 }
 
 export default ContentSection;
+

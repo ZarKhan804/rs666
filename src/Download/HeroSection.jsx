@@ -7,7 +7,7 @@ function HeroSection() {
   return (
     <section
       aria-labelledby="download-title"
-      className="relative overflow-hidden bg-gray-400 text-gray-950"
+      className="relative overflow-hidden bg-gray-200 text-gray-950"
     >
       {/* Background Effects */}
       <div

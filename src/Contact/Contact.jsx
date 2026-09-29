@@ -25,7 +25,7 @@ function Contact() {
         />
       </Helmet>
 
-      <main>
+      <main className="bg-gray-200">
         <HeroSection />
         <ContentSection />
         <ArticleSection />

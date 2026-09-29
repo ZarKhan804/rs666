@@ -69,7 +69,7 @@ function ContentSection() {
     <section
       id="contact-form"
       aria-labelledby="contact-form-title"
-      className="bg-gray-400"
+      className="bg-gray-200"
     >
       <div className="mx-auto grid max-w-7xl gap-10 px-5 py-12 sm:py-16 md:grid-cols-2 lg:px-8">
 

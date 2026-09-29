@@ -2,7 +2,7 @@ function HeroSection() {
   return (
     <section
       aria-labelledby="contact-page-title"
-      className="relative overflow-hidden bg-gray-400 text-gray-950"
+      className="relative overflow-hidden bg-gray-200 text-gray-950"
     >
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute left-1/2 top-[-180px] h-[420px] w-[420px] -translate-x-1/2 rounded-full bg-yellow-400/20 blur-[110px]" />

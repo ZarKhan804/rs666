@@ -5,7 +5,7 @@ function ContentSection() {
   return (
     <section
       aria-labelledby="download-content-title"
-      className="bg-gray-400 pb-14 pt-0 sm:pb-20"
+      className="bg-gray-200 pb-14 pt-0 sm:pb-20"
     >
       <div className="mx-auto max-w-5xl px-5 lg:px-8">
 

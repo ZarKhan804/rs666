@@ -46,7 +46,7 @@ export default function Download() {
         />
       </Helmet>
 
-      <main id="main-content">
+      <main id="main-content " className="bg-gray-200">
         <HeroSection />
         <ArticleSection />
         <ContentSection />
