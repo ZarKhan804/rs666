@@ -4,27 +4,51 @@ import ArticleSection from "./ArticleSection";
 import ContentSection from "./ContentSection";
 
 function Home() {
+  const canonicalUrl = "https://666rspak.com/";
+
+  const title = "666RS Game – Download APK & Play Online in Pakistan";
+
+  const description =
+    "Explore 666RS Game Pakistan information, mobile access, download guidance, gaming features, account resources and useful 666RS gaming guides.";
+
+  const socialImage =
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB_WP8_RE8VQ3n5hRA6qQGwJ17yuor8qbHdXmmqvmLz4yzvNfun1p7YVcg&s=10";
+
   return (
     <>
       <Helmet>
-        <title>666RS Game – Download APK & Play Online in Pakistan</title>
-        <meta name="description" content="Explore 666RS Game Pakistan information, mobile access, download guidance, gaming features, account resources and useful 666RS gaming guides." />
-        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <title>{title}</title>
+
+        <meta name="description" content={description} />
+
+        <meta
+          name="robots"
+          content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        />
+
         <meta name="author" content="666RS" />
-        <link rel="canonical" href="https://666rspak.com/" />
+
+        <link rel="canonical" href={canonicalUrl} />
+
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="666RS Game – Download APK & Play Online in Pakistan" />
-        <meta property="og:description" content="Explore 666RS Game Pakistan information, mobile access, download guidance, gaming features, account resources and useful 666RS gaming guides." />
-        <meta property="og:url" content="https://666rspak.com/" />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta property="og:url" content={canonicalUrl} />
         <meta property="og:site_name" content="666RS" />
-        <meta property="og:image" content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB_WP8_RE8VQ3n5hRA6qQGwJ17yuor8qbHdXmmqvmLz4yzvNfun1p7YVcg&s=10" />
+        <meta property="og:image" content={socialImage} />
         <meta property="og:image:alt" content="666RS Game Pakistan" />
+
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="666RS Game – Download APK & Play Online in Pakistan" />
-        <meta name="twitter:description" content="Explore 666RS Game Pakistan information, mobile access, download guidance, gaming features, account resources and useful 666RS gaming guides." />
-        <meta name="twitter:image" content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB_WP8_RE8VQ3n5hRA6qQGwJ17yuor8qbHdXmmqvmLz4yzvNfun1p7YVcg&s=10" />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={description} />
+        <meta name="twitter:image" content={socialImage} />
+        <meta
+          name="twitter:image:alt"
+          content="666RS Game Pakistan"
+        />
       </Helmet>
-      <main>
+
+      <main id="main-content" className="bg-gray-200">
         <HeroSection />
         <ArticleSection />
         <ContentSection />
@@ -32,4 +56,5 @@ function Home() {
     </>
   );
 }
+
 export default Home;
