@@ -1,6 +1,4 @@
-
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
 import {
   Menu,
   X,
@@ -27,7 +25,6 @@ export default function Header() {
 
   return (
     <>
-      {/* Skip Navigation */}
       <a
         href="#main-content"
         className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-lg focus:bg-yellow-400 focus:px-4 focus:py-2 focus:font-bold focus:text-slate-950"
@@ -37,17 +34,14 @@ export default function Header() {
 
       <header className="sticky top-0 z-50 w-full border-b border-white/10 bg-slate-950/95 text-white shadow-lg shadow-black/10 backdrop-blur-xl">
 
-        {/* Top Accent */}
         <div className="h-[2px] w-full bg-gradient-to-r from-transparent via-yellow-400 to-transparent" />
 
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
           <div className="flex h-[76px] items-center justify-between">
 
-            {/* ================= LOGO ================= */}
-            <NavLink
-              to="/"
-              end
+            <a
+              href="/"
               onClick={closeMenu}
               aria-label="666RS Game home page"
               className="group flex items-center gap-3"
@@ -81,47 +75,27 @@ export default function Header() {
                   Gaming Platform
                 </span>
               </div>
-            </NavLink>
+            </a>
 
-            {/* ================= DESKTOP NAVIGATION ================= */}
             <nav
               aria-label="Primary navigation"
               className="hidden items-center gap-1 md:flex"
             >
               {navLinks.map((link) => (
-                <NavLink
+                <a
                   key={link.path}
-                  to={link.path}
-                  end={link.path === "/"}
-                  onClick={closeMenu}
-                  className={({ isActive }) =>
-                    `group relative rounded-lg px-4 py-3 text-sm font-semibold transition-all duration-300 ${
-                      isActive
-                        ? "text-yellow-400"
-                        : "text-slate-300 hover:text-white"
-                    }`
-                  }
+                  href={link.path}
+                  className="group relative rounded-lg px-4 py-3 text-sm font-semibold text-slate-300 transition-all duration-300 hover:text-white"
                 >
-                  {({ isActive }) => (
-                    <>
-                      <span className="relative z-10">
-                        {link.name}
-                      </span>
+                  <span className="relative z-10">
+                    {link.name}
+                  </span>
 
-                      <span
-                        className={`absolute bottom-1 left-1/2 h-[2px] -translate-x-1/2 rounded-full bg-yellow-400 transition-all duration-300 ${
-                          isActive
-                            ? "w-5"
-                            : "w-0 group-hover:w-5"
-                        }`}
-                      />
-                    </>
-                  )}
-                </NavLink>
+                  <span className="absolute bottom-1 left-1/2 h-[2px] w-0 -translate-x-1/2 rounded-full bg-yellow-400 transition-all duration-300 group-hover:w-5" />
+                </a>
               ))}
             </nav>
 
-            {/* ================= DESKTOP DOWNLOAD ================= */}
             <div className="hidden md:block">
               <a
                 href={gameUrl}
@@ -143,12 +117,9 @@ export default function Header() {
                   strokeWidth={2.5}
                   className="transition-transform duration-300 group-hover:translate-x-1"
                 />
-
-                <span className="absolute inset-y-0 -left-20 w-10 rotate-12 bg-white/30 blur-md transition-all duration-700 group-hover:left-[120%]" />
               </a>
             </div>
 
-            {/* ================= MOBILE BUTTON ================= */}
             <button
               type="button"
               onClick={() => setMenuOpen((prev) => !prev)}
@@ -165,7 +136,6 @@ export default function Header() {
             </button>
           </div>
 
-          {/* ================= MOBILE MENU ================= */}
           <div
             id="mobile-navigation"
             className={`overflow-hidden transition-all duration-300 md:hidden ${
@@ -176,40 +146,27 @@ export default function Header() {
           >
             <div className="border-t border-white/10 pt-3">
 
-              <nav aria-label="Mobile primary navigation" className="flex flex-col">
+              <nav
+                aria-label="Mobile primary navigation"
+                className="flex flex-col"
+              >
                 {navLinks.map((link) => (
-                  <NavLink
+                  <a
                     key={link.path}
-                    to={link.path}
-                    end={link.path === "/"}
+                    href={link.path}
                     onClick={closeMenu}
-                    className={({ isActive }) =>
-                      `group flex items-center justify-between rounded-xl px-4 py-3.5 text-sm font-semibold transition-all duration-200 ${
-                        isActive
-                          ? "bg-yellow-400/10 text-yellow-400"
-                          : "text-slate-300 hover:bg-white/5 hover:text-white"
-                      }`
-                    }
+                    className="group flex items-center justify-between rounded-xl px-4 py-3.5 text-sm font-semibold text-slate-300 transition-all duration-200 hover:bg-white/5 hover:text-white"
                   >
-                    {({ isActive }) => (
-                      <>
-                        <span>{link.name}</span>
+                    <span>{link.name}</span>
 
-                        <ChevronRight
-                          size={17}
-                          className={`transition-transform duration-200 ${
-                            isActive
-                              ? "translate-x-0 text-yellow-400"
-                              : "-translate-x-1 opacity-0 group-hover:translate-x-0 group-hover:opacity-100"
-                          }`}
-                        />
-                      </>
-                    )}
-                  </NavLink>
+                    <ChevronRight
+                      size={17}
+                      className="opacity-0 transition-all duration-200 group-hover:translate-x-0 group-hover:opacity-100"
+                    />
+                  </a>
                 ))}
               </nav>
 
-              {/* Mobile Download */}
               <a
                 href={gameUrl}
                 target="_blank"
@@ -229,4 +186,3 @@ export default function Header() {
     </>
   );
 }
-
