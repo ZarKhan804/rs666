@@ -63,7 +63,7 @@ function HeroSection() {
               </a>
 
               <a
-                href="/666rs/download"
+                href=""
                 className="inline-flex items-center justify-center rounded-xl border border-gray-400 bg-white/60 px-7 py-3.5 text-sm font-bold text-gray-900 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-yellow-500 hover:bg-yellow-50"
               >
                 666RS Download
