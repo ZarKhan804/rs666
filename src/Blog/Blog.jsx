@@ -3,73 +3,28 @@ import HeroSection from "./HeroSection";
 import ArticleSection from "./ArticleSection";
 import ContentSection from "./ContentSection";
 
-const SITE_URL = "https://666rspak.com";
-const PAGE_URL = `${SITE_URL}/blog`;
-
-const SOCIAL_IMAGE =
-  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB_WP8_RE8VQ3n5hRA6qQGwJ17yuor8qbHdXmmqvmLz4yzvNfun1p7YVcg&s=10";
-
-const title =
-  "666RS Game Blog – Download, Login & Registration Guides";
-
-const description =
-  "Explore useful 666RS Game guides covering mobile access, APK information, account topics, games, payments, responsible gaming and related platform resources.";
-
-export default function Blog() {
-  const structuredData = {
-    "@context": "https://schema.org",
-    "@type": "Blog",
-    name: "666RS Game Blog",
-    description,
-    url: PAGE_URL,
-    publisher: {
-      "@type": "Organization",
-      name: "666RS",
-    },
-  };
-
+function Blog() {
   return (
     <>
       <Helmet>
-        <title>{title}</title>
-
-        <meta name="description" content={description} />
-
-        <meta
-          name="robots"
-          content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
-        />
-
+        <title>666RS Game Blog – Download, Login & Registration Guides</title>
+        <meta name="description" content="Explore useful 666RS Game guides covering mobile access, APK information, account topics, games, payments, responsible gaming and related platform resources." />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="author" content="666RS" />
-
-        <link rel="canonical" href={PAGE_URL} />
-
+        <link rel="canonical" href="https://666rspak.com/blog" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content={title} />
-        <meta property="og:description" content={description} />
-        <meta property="og:url" content={PAGE_URL} />
+        <meta property="og:title" content="666RS Game Blog – Download, Login & Registration Guides" />
+        <meta property="og:description" content="Explore useful 666RS Game guides covering mobile access, APK information, account topics, games, payments, responsible gaming and related platform resources." />
+        <meta property="og:url" content="https://666rspak.com/blog" />
         <meta property="og:site_name" content="666RS" />
-        <meta property="og:image" content={SOCIAL_IMAGE} />
-        <meta
-          property="og:image:alt"
-          content="666RS Game Blog and Gaming Guides"
-        />
-
+        <meta property="og:image" content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB_WP8_RE8VQ3n5hRA6qQGwJ17yuor8qbHdXmmqvmLz4yzvNfun1p7YVcg&s=10" />
+        <meta property="og:image:alt" content="666RS Game Blog and Gaming Guides" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={title} />
-        <meta name="twitter:description" content={description} />
-        <meta name="twitter:image" content={SOCIAL_IMAGE} />
-        <meta
-          name="twitter:image:alt"
-          content="666RS Game Blog and Gaming Guides"
-        />
-
-        <script type="application/ld+json">
-          {JSON.stringify(structuredData)}
-        </script>
+        <meta name="twitter:title" content="666RS Game Blog – Download, Login & Registration Guides" />
+        <meta name="twitter:description" content="Explore useful 666RS Game guides covering mobile access, APK information, account topics, games, payments, responsible gaming and related platform resources." />
+        <meta name="twitter:image" content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB_WP8_RE8VQ3n5hRA6qQGwJ17yuor8qbHdXmmqvmLz4yzvNfun1p7YVcg&s=10" />
       </Helmet>
-
-      <main id="main-content" className="bg-gray-200 text-gray-900">
+      <main>
         <HeroSection />
         <ArticleSection />
         <ContentSection />
@@ -77,3 +32,4 @@ export default function Blog() {
     </>
   );
 }
+export default Blog;
