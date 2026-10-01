@@ -1,9 +1,28 @@
+
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
+  "redirects": [
+    {
+      "source": "/666rs",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/666rs/download",
+      "destination": "/download",
+      "statusCode": 301
+    },
+    {
+      "source": "/about",
+      "destination": "/about-us",
+      "statusCode": 301
+    }
+  ],
   "rewrites": [
     {
-      "source": "/(.*)",
+      "source": "/((?!sitemap\\.xml$|robots\\.txt$|favicon\\.svg$).*)",
       "destination": "/index.html"
     }
   ]
 }
+

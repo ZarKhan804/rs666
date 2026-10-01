@@ -1,4 +1,6 @@
+
 User-agent: *
 Allow: /
 
 Sitemap: https://666rspak.com/sitemap.xml
+
