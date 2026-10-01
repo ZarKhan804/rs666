@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import {
-  BrowserRouter,
   Routes,
   Route,
   useLocation,
@@ -31,7 +30,7 @@ function ScrollToTop() {
 
 function App() {
   return (
-    <BrowserRouter>
+    <>
       <ScrollToTop />
 
       <div className="min-h-screen bg-gray-200 text-gray-900">
@@ -65,7 +64,7 @@ function App() {
 
         <Footer />
       </div>
-    </BrowserRouter>
+    </>
   );
 }
 
