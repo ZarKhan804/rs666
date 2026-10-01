@@ -1,17 +1,16 @@
-import React from "react";
 import { Helmet } from "react-helmet-async";
-
 import HeroSection from "./HeroSection";
 import ContentSection from "./ContentSection";
 import ArticleSection from "./ArticleSection";
 
-const Contact = () => {
-  const title = "Contact 666RS – Gaming Support & Information";
+function Contact() {
+  const canonicalUrl = "https://666rspak.com/contact";
+
+  const title =
+    "Contact 666RS – Pakistan Game Support Information";
 
   const description =
-    "Contact 666RS for gaming information, platform updates, mobile access questions, account guidance, download information and general gaming assistance.";
-
-  const canonicalUrl = "https://666rspak.com/contact";
+    "Contact 666RS Game for questions, feedback, account guidance, platform information, mobile access and general gaming assistance.";
 
   const socialImage =
     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB_WP8_RE8VQ3n5hRA6qQGwJ17yuor8qbHdXmmqvmLz4yzvNfun1p7YVcg&s=10";
@@ -19,8 +18,6 @@ const Contact = () => {
   return (
     <>
       <Helmet>
-        <html lang="en" />
-
         <title>{title}</title>
 
         <meta name="description" content={description} />
@@ -42,7 +39,7 @@ const Contact = () => {
         <meta property="og:image" content={socialImage} />
         <meta
           property="og:image:alt"
-          content="Contact 666RS Gaming Support"
+          content="Contact 666RS Game"
         />
 
         <meta name="twitter:card" content="summary_large_image" />
@@ -51,17 +48,17 @@ const Contact = () => {
         <meta name="twitter:image" content={socialImage} />
         <meta
           name="twitter:image:alt"
-          content="Contact 666RS Gaming Support"
+          content="Contact 666RS Game"
         />
       </Helmet>
 
-      <main className="bg-gray-200 text-gray-900">
+      <main id="main-content" className="bg-gray-200">
         <HeroSection />
         <ContentSection />
         <ArticleSection />
       </main>
     </>
   );
-};
+}
 
 export default Contact;

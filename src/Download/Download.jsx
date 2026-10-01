@@ -1,18 +1,16 @@
-import React from "react";
 import { Helmet } from "react-helmet-async";
-
 import HeroSection from "./HeroSection";
 import ArticleSection from "./ArticleSection";
 import ContentSection from "./ContentSection";
 
-const Download = () => {
+function Download() {
+  const canonicalUrl = "https://666rspak.com/download";
+
   const title =
     "666RS Game Download – Latest APK for Android in Pakistan";
 
   const description =
-    "Learn about 666RS Game Download, 666RS APK, Android mobile access, app information, compatibility, account access and useful gaming resources.";
-
-  const canonicalUrl = "https://666rspak.com/download";
+    "Learn about 666RS Game Download, 666RS APK, mobile access, app information, Android compatibility, account access and safe gaming resources.";
 
   const socialImage =
     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB_WP8_RE8VQ3n5hRA6qQGwJ17yuor8qbHdXmmqvmLz4yzvNfun1p7YVcg&s=10";
@@ -20,8 +18,6 @@ const Download = () => {
   return (
     <>
       <Helmet>
-        <html lang="en" />
-
         <title>{title}</title>
 
         <meta name="description" content={description} />
@@ -56,13 +52,13 @@ const Download = () => {
         />
       </Helmet>
 
-      <main className="bg-gray-200 text-gray-900">
+      <main id="main-content" className="bg-gray-200">
         <HeroSection />
         <ArticleSection />
         <ContentSection />
       </main>
     </>
   );
-};
+}
 
 export default Download;

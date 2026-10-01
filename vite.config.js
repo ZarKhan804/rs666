@@ -1,19 +1,6 @@
 import react from "@vitejs/plugin-react";
 import { defineConfig } from "vite";
-import prerender from "vite-plugin-prerender";
 
 export default defineConfig({
-  plugins: [
-    react(),
-
-    prerender({
-      routes: [
-        "/",
-        "/about-us",
-        "/blog",
-        "/contact",
-        "/download",
-      ],
-    }),
-  ],
+  plugins: [react()],
 });
