@@ -19,32 +19,32 @@ const ArticleSection = () => {
             <p>
               The <strong>666RS Contact</strong> page provides visitors with a
               dedicated place to send questions, feedback, and general
-              enquiries about the 666RS Game platform. Users searching for{" "}
-              <strong>666RS Game Support</strong>,{" "}
-              <strong>666RS Customer Support</strong>, or general{" "}
-              <strong>666RS Assistance</strong> can use the available contact
+              enquiries about the 666RS Game platform. Users searching for
+              <strong> 666RS Game Support</strong>,
+              <strong> 666RS Customer Support</strong>, or general
+              <strong> 666RS Assistance</strong> can use the available contact
               form to provide their information and message.
             </p>
 
             <p>
-              Visitors who need information about{" "}
-              <strong>666RS Game Download</strong> can also visit the{" "}
+              Visitors who need information about
+              <strong> 666RS Game Download</strong> can visit the{" "}
               <Link
                 to="/download"
                 className="font-semibold text-yellow-700 underline decoration-yellow-400 underline-offset-4 hover:text-yellow-800"
               >
                 666RS Download
               </Link>{" "}
-              page. That section provides separate information about mobile
-              access, download-related topics, APK information, and supported
-              device considerations.
+              page. That section provides information about mobile access,
+              download-related topics, APK information, and device
+              considerations.
             </p>
 
             <p>
               Visitors who have questions about the gaming platform can use
-              the contact form above to describe their enquiry. Include clear
-              and accurate information so the subject of the message is easy
-              to understand.
+              the contact form to describe their enquiry. Clear and accurate
+              information can make the subject of the message easier to
+              understand.
             </p>
 
             <h3 className="pt-2 text-xl font-extrabold text-gray-950 sm:text-2xl">
@@ -60,7 +60,7 @@ const ArticleSection = () => {
             </p>
 
             <p>
-              Visitors interested in the main gaming platform can explore the{" "}
+              Visitors interested in the main platform can explore the{" "}
               <Link
                 to="/"
                 className="font-semibold text-yellow-700 underline decoration-yellow-400 underline-offset-4 hover:text-yellow-800"
@@ -76,10 +76,10 @@ const ArticleSection = () => {
             </h3>
 
             <p>
-              Users searching for <strong>666RS Contact</strong>,{" "}
-              <strong>666RS Contact Us</strong>,{" "}
-              <strong>666RS Customer Service</strong>, or{" "}
-              <strong>666RS Support</strong> information can use this page to
+              Users searching for <strong>666RS Contact</strong>,
+              <strong> 666RS Contact Us</strong>,
+              <strong> 666RS Customer Service</strong>, or
+              <strong> 666RS Support</strong> information can use this page to
               submit a general enquiry. Make sure the submitted email address
               and other contact details are accurate before sending a message.
             </p>
@@ -104,13 +104,13 @@ const ArticleSection = () => {
                 666RS Game Download
               </Link>{" "}
               page. It provides information about mobile access, download
-              topics, APK information, and device compatibility considerations.
+              topics, APK information, and device considerations.
             </p>
 
             <p>
               Users should review available information carefully and make
-              sure their device, browser, and connection are suitable before
-              accessing an online gaming platform.
+              sure their device, browser, and internet connection are suitable
+              before accessing an online gaming platform.
             </p>
 
             <h3 className="pt-2 text-xl font-extrabold text-gray-950 sm:text-2xl">
@@ -119,13 +119,24 @@ const ArticleSection = () => {
 
             <p>
               When submitting a message, provide the relevant details in the
-              available fields. A clear subject and detailed message can help
-              explain whether the enquiry concerns account access, mobile
-              browsing, download information, game-related questions, or
-              general website assistance.
+              available fields. A clear and detailed message can help explain
+              whether the enquiry concerns account access, mobile browsing,
+              download information, game-related questions, or general website
+              assistance.
             </p>
 
-            <div className="grid gap-3 pt-4 sm:grid-cols-3">
+            <h3 className="pt-2 text-xl font-extrabold text-gray-950 sm:text-2xl">
+              666RS Website Navigation
+            </h3>
+
+            <p>
+              Visitors can use the internal links below to move between the
+              main 666RS website sections. These links help visitors access
+              the main game page, information about the website, the blog, the
+              download section, and this contact page.
+            </p>
+
+            <div className="grid gap-3 pt-4 sm:grid-cols-2 lg:grid-cols-4">
               <Link
                 to="/"
                 className="rounded-xl border border-gray-300 bg-gray-50 p-4 text-center text-sm font-bold text-gray-800 transition duration-300 hover:-translate-y-1 hover:border-yellow-400 hover:bg-yellow-50 hover:shadow-md"
@@ -134,17 +145,24 @@ const ArticleSection = () => {
               </Link>
 
               <Link
+                to="/about-us"
+                className="rounded-xl border border-gray-300 bg-gray-50 p-4 text-center text-sm font-bold text-gray-800 transition duration-300 hover:-translate-y-1 hover:border-yellow-400 hover:bg-yellow-50 hover:shadow-md"
+              >
+                About 666RS
+              </Link>
+
+              <Link
+                to="/blog"
+                className="rounded-xl border border-gray-300 bg-gray-50 p-4 text-center text-sm font-bold text-gray-800 transition duration-300 hover:-translate-y-1 hover:border-yellow-400 hover:bg-yellow-50 hover:shadow-md"
+              >
+                666RS Blog
+              </Link>
+
+              <Link
                 to="/download"
                 className="rounded-xl border border-gray-300 bg-gray-50 p-4 text-center text-sm font-bold text-gray-800 transition duration-300 hover:-translate-y-1 hover:border-yellow-400 hover:bg-yellow-50 hover:shadow-md"
               >
                 666RS Download
-              </Link>
-
-              <Link
-                to="/"
-                className="rounded-xl border border-gray-300 bg-gray-50 p-4 text-center text-sm font-bold text-gray-800 transition duration-300 hover:-translate-y-1 hover:border-yellow-400 hover:bg-yellow-50 hover:shadow-md"
-              >
-                Main Website
               </Link>
             </div>
           </div>
@@ -156,15 +174,15 @@ const ArticleSection = () => {
           </h2>
 
           <p className="mt-4 text-base leading-8 text-gray-600 sm:text-[17px]">
-            Visitors searching for <strong>666RS Contact</strong>,{" "}
-            <strong>666RS Game Contact</strong>,{" "}
-            <strong>666RS Support</strong>,{" "}
-            <strong>666RS Customer Support</strong>,{" "}
-            <strong>666RS Help</strong>, or{" "}
-            <strong>666RS Game Assistance</strong> can use this page to submit
-            a general enquiry. The page also provides information related to
-            account questions, mobile access, game information, download
-            guidance, and general platform enquiries.
+            Visitors searching for <strong>666RS Contact</strong>,
+            <strong> 666RS Game Contact</strong>,
+            <strong> 666RS Support</strong>,
+            <strong> 666RS Customer Support</strong>,
+            <strong> 666RS Help</strong>, or
+            <strong> 666RS Game Assistance</strong> can use this page to
+            submit a general enquiry. The page also provides information
+            related to account questions, mobile access, game information,
+            download guidance, and general platform enquiries.
           </p>
 
           <p className="mt-4 text-base leading-8 text-gray-600 sm:text-[17px]">
@@ -188,6 +206,20 @@ const ArticleSection = () => {
               666RS Game
             </Link>{" "}
             page to explore the available platform information.
+          </p>
+
+          <p className="mt-4 text-base leading-8 text-gray-600 sm:text-[17px]">
+            For general online safety information, visitors can also review
+            the{" "}
+            <a
+              href="https://safety.google/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-yellow-700 underline decoration-yellow-400 underline-offset-4 hover:text-yellow-800"
+            >
+              Google Safety Center
+            </a>
+            .
           </p>
         </article>
       </div>

@@ -33,13 +33,12 @@ export default function Header() {
       </a>
 
       <header className="sticky top-0 z-50 w-full border-b border-white/10 bg-slate-950/95 text-white shadow-lg shadow-black/10 backdrop-blur-xl">
-
         <div className="h-[2px] w-full bg-gradient-to-r from-transparent via-yellow-400 to-transparent" />
 
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-
           <div className="flex h-[76px] items-center justify-between">
-
+            
+            {/* Logo */}
             <a
               href="/"
               onClick={closeMenu}
@@ -77,6 +76,7 @@ export default function Header() {
               </div>
             </a>
 
+            {/* Desktop Navigation */}
             <nav
               aria-label="Primary navigation"
               className="hidden items-center gap-1 md:flex"
@@ -96,6 +96,7 @@ export default function Header() {
               ))}
             </nav>
 
+            {/* Desktop Download */}
             <div className="hidden md:block">
               <a
                 href={gameUrl}
@@ -120,6 +121,7 @@ export default function Header() {
               </a>
             </div>
 
+            {/* Mobile Menu Button */}
             <button
               type="button"
               onClick={() => setMenuOpen((prev) => !prev)}
@@ -136,6 +138,7 @@ export default function Header() {
             </button>
           </div>
 
+          {/* Mobile Navigation */}
           <div
             id="mobile-navigation"
             className={`overflow-hidden transition-all duration-300 md:hidden ${
@@ -145,7 +148,6 @@ export default function Header() {
             }`}
           >
             <div className="border-t border-white/10 pt-3">
-
               <nav
                 aria-label="Mobile primary navigation"
                 className="flex flex-col"
@@ -177,10 +179,8 @@ export default function Header() {
                 <Download size={18} />
                 Download Game
               </a>
-
             </div>
           </div>
-
         </div>
       </header>
     </>

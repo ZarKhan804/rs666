@@ -156,6 +156,47 @@ export default function ContentSection() {
               </p>
             </section>
 
+            <nav
+              aria-label="Download website resources"
+              className="border-t border-gray-300 pt-8"
+            >
+              <h3 className="text-xl font-black text-gray-950 sm:text-2xl">
+                666RS Website Resources
+              </h3>
+
+              <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+
+                <Link
+                  to="/"
+                  className="rounded-xl border border-gray-200 bg-white p-4 font-bold text-gray-800 transition hover:-translate-y-1 hover:border-yellow-400 hover:text-yellow-700"
+                >
+                  Home
+                </Link>
+
+                <Link
+                  to="/about-us"
+                  className="rounded-xl border border-gray-200 bg-white p-4 font-bold text-gray-800 transition hover:-translate-y-1 hover:border-yellow-400 hover:text-yellow-700"
+                >
+                  About Us
+                </Link>
+
+                <Link
+                  to="/blog"
+                  className="rounded-xl border border-gray-200 bg-white p-4 font-bold text-gray-800 transition hover:-translate-y-1 hover:border-yellow-400 hover:text-yellow-700"
+                >
+                  Blog
+                </Link>
+
+                <Link
+                  to="/contact"
+                  className="rounded-xl border border-gray-200 bg-white p-4 font-bold text-gray-800 transition hover:-translate-y-1 hover:border-yellow-400 hover:text-yellow-700"
+                >
+                  Contact
+                </Link>
+
+              </div>
+            </nav>
+
           </div>
         </article>
       </div>

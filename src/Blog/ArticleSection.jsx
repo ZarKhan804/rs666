@@ -235,6 +235,28 @@ export default function ArticleSection() {
             </p>
           </section>
 
+          {/* External Outgoing Link */}
+          <section className="mb-10">
+            <h3 className="text-2xl font-black text-gray-950">
+              Online Safety Information
+            </h3>
+
+            <p className="mt-4 text-base leading-8 text-gray-700">
+              Visitors should also review general online safety information
+              before downloading applications or sharing personal account
+              information. For general online safety guidance, visit the{" "}
+              <a
+                href="https://safety.google/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-semibold text-yellow-600 underline decoration-yellow-400 underline-offset-4 hover:text-yellow-700"
+              >
+                Google Safety Center
+              </a>
+              .
+            </p>
+          </section>
+
           <section>
             <h3 className="text-2xl font-black text-gray-950">
               Responsible Gaming

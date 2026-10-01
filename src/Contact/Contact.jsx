@@ -9,7 +9,7 @@ const PAGE_URL = `${SITE_URL}/contact`;
 const TITLE = "Contact 666RS – Pakistan Game Support Information";
 
 const DESCRIPTION =
-  "Contact 666RS Game for questions, feedback, account guidance, platform information, mobile access and general gaming assistance.";
+  "Contact 666RS Game for questions, feedback, account guidance, mobile access, platform information and general gaming assistance.";
 
 const SOCIAL_IMAGE =
   "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB_WP8_RE8VQ3n5hRA6qQGwJ17yuor8qbHdXmmqvmLz4yzvNfun1p7YVcg&s=10";
@@ -46,11 +46,12 @@ function Contact() {
         <meta name="twitter:image:alt" content="Contact 666RS Game" />
       </Helmet>
 
-      <main id="main-content" className="bg-gray-200">
+      {/* App.jsx میں پہلے ہی <main> موجود ہے، اس لیے یہاں دوبارہ <main> نہیں بنایا */}
+      <div className="bg-gray-200 text-gray-900">
         <HeroSection />
         <ContentSection />
         <ArticleSection />
-      </main>
+      </div>
     </>
   );
 }

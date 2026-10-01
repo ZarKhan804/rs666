@@ -1,5 +1,10 @@
 import { useEffect } from "react";
-import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  useLocation,
+} from "react-router-dom";
 
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
@@ -35,10 +40,26 @@ function App() {
         <main id="main-content">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/about-us" element={<AboutUs />} />
-            <Route path="/blog" element={<Blog />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/download" element={<Download />} />
+
+            <Route
+              path="/about-us"
+              element={<AboutUs />}
+            />
+
+            <Route
+              path="/blog"
+              element={<Blog />}
+            />
+
+            <Route
+              path="/contact"
+              element={<Contact />}
+            />
+
+            <Route
+              path="/download"
+              element={<Download />}
+            />
           </Routes>
         </main>
 

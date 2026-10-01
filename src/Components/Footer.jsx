@@ -18,30 +18,45 @@ export default function Footer() {
   ];
 
   const informationLinks = [
-    { name: "666RS Game Information", path: "/about-us" },
-    { name: "666RS Game Blog", path: "/blog" },
-    { name: "666RS Download Guide", path: "/download" },
-    { name: "666RS Contact", path: "/contact" },
+    {
+      name: "666RS Game Information",
+      path: "/about-us",
+    },
+    {
+      name: "666RS Game Blog",
+      path: "/blog",
+    },
+    {
+      name: "666RS Download Guide",
+      path: "/download",
+    },
+    {
+      name: "666RS Contact",
+      path: "/contact",
+    },
   ];
 
   return (
     <footer className="relative overflow-hidden bg-slate-950 text-white">
-
+      {/* Background Decoration */}
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute left-1/2 top-0 h-72 w-72 -translate-x-1/2 rounded-full bg-yellow-400/5 blur-3xl" />
+
         <div className="absolute bottom-0 left-0 h-64 w-64 rounded-full bg-amber-500/5 blur-3xl" />
+
         <div className="absolute right-0 top-1/3 h-64 w-64 rounded-full bg-yellow-300/5 blur-3xl" />
       </div>
 
       <div className="relative h-px w-full bg-gradient-to-r from-transparent via-yellow-400/70 to-transparent" />
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-
         <div className="grid gap-12 py-14 md:grid-cols-2 lg:grid-cols-4 lg:gap-10">
-
+          
+          {/* Brand */}
           <div>
             <a
               href="/"
+              aria-label="666RS Game home page"
               className="group inline-flex items-center gap-3"
             >
               <div className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-xl bg-gradient-to-br from-yellow-300 via-yellow-400 to-amber-500 shadow-lg shadow-yellow-500/10 transition duration-300 group-hover:scale-105 group-hover:shadow-yellow-400/20">
@@ -91,6 +106,7 @@ export default function Footer() {
             </div>
           </div>
 
+          {/* Quick Links */}
           <nav aria-label="666RS quick links">
             <h3 className="mb-5 text-sm font-bold uppercase tracking-[0.18em] text-white">
               Quick Links
@@ -115,6 +131,7 @@ export default function Footer() {
             </ul>
           </nav>
 
+          {/* Discover */}
           <nav aria-label="666RS discover links">
             <h3 className="mb-5 text-sm font-bold uppercase tracking-[0.18em] text-white">
               Discover
@@ -134,6 +151,7 @@ export default function Footer() {
             </ul>
           </nav>
 
+          {/* Download */}
           <div>
             <h3 className="mb-5 text-sm font-bold uppercase tracking-[0.18em] text-white">
               666RS Game
@@ -148,21 +166,34 @@ export default function Footer() {
               href={gameUrl}
               target="_blank"
               rel="nofollow sponsored noopener noreferrer"
+              aria-label="Download 666RS Game"
               className="mt-5 inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-yellow-300 via-yellow-400 to-amber-400 px-5 py-3 text-sm font-extrabold text-slate-950 shadow-lg shadow-yellow-500/10 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-yellow-400/20"
             >
               <Download size={17} />
+
               <span>Download Game</span>
+            </a>
+
+            {/* حقیقی external link */}
+            <a
+              href="https://safety.google/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-slate-400 transition hover:text-yellow-400"
+            >
+              Online Safety Information
+              <ArrowUpRight size={14} />
             </a>
           </div>
         </div>
 
+        {/* Internal Site Navigation */}
         <div className="rounded-2xl border border-white/10 bg-white/[0.02] p-5">
           <h3 className="text-sm font-bold text-white">
             Explore 666RS Game
           </h3>
 
           <div className="mt-4 flex flex-wrap gap-x-5 gap-y-3">
-
             <a
               href="/"
               className="text-sm text-slate-400 transition hover:text-yellow-400"
@@ -174,7 +205,7 @@ export default function Footer() {
               href="/about-us"
               className="text-sm text-slate-400 transition hover:text-yellow-400"
             >
-              666RS Game Pakistan
+              666RS Game Information
             </a>
 
             <a
@@ -197,19 +228,24 @@ export default function Footer() {
             >
               666RS Contact
             </a>
-
           </div>
         </div>
 
         <div className="my-7 h-px bg-white/10" />
 
+        {/* Bottom Footer */}
         <div className="flex flex-col gap-5 py-6 sm:flex-row sm:items-center sm:justify-between">
-
           <p className="text-xs leading-5 text-slate-500">
             © {currentYear} 666RS Game. All rights reserved.
           </p>
 
           <div className="flex flex-wrap items-center gap-5">
+            <a
+              href="/"
+              className="text-xs text-slate-500 transition-colors hover:text-slate-300"
+            >
+              Home
+            </a>
 
             <a
               href="/about-us"
@@ -238,7 +274,6 @@ export default function Footer() {
             >
               Download
             </a>
-
           </div>
         </div>
       </div>

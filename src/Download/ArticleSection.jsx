@@ -162,6 +162,29 @@ export default function ArticleSection() {
             </p>
           </section>
 
+          {/* External / Outgoing Link */}
+          <section className="mb-9">
+            <h3 className="mb-3 text-2xl font-black text-gray-950">
+              Online Safety Information
+            </h3>
+
+            <p className="text-base leading-8 text-gray-700">
+              Visitors should also review general online safety information
+              before downloading applications or sharing personal account
+              information. General guidance about staying safer online is
+              available through the{" "}
+              <a
+                href="https://www.google.com/safetycenter/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-semibold text-yellow-700 underline decoration-yellow-500 underline-offset-4 hover:text-yellow-800"
+              >
+                Google Safety Center
+              </a>
+              .
+            </p>
+          </section>
+
           <section className="mb-9">
             <h3 className="mb-3 text-2xl font-black text-gray-950">
               Explore More 666RS Information

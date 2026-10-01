@@ -1,15 +1,17 @@
 import { Helmet } from "react-helmet-async";
+
 import HeroSection from "./HeroSection";
 import ArticleSection from "./ArticleSection";
 import ContentSection from "./ContentSection";
 
 function Download() {
-  const canonicalUrl = "https://666rspak.com/download";
+  const SITE_URL = "https://666rspak.com";
+  const canonicalUrl = `${SITE_URL}/download`;
 
-  const title = "666RS Game Download – Latest APK for Android in Pakistan";
+  const title = "666RS Game Download – Latest APK & Mobile Access";
 
   const description =
-    "Learn about 666RS Game Download, 666RS APK, mobile access, app information, Android compatibility, account access and gaming resources.";
+    "Learn about 666RS Game Download, 666RS APK, mobile access, Android compatibility, account access, gaming information and safe download practices.";
 
   const socialImage =
     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB_WP8_RE8VQ3n5hRA6qQGwJ17yuor8qbHdXmmqvmLz4yzvNfun1p7YVcg&s=10";
@@ -36,7 +38,10 @@ function Download() {
         <meta property="og:url" content={canonicalUrl} />
         <meta property="og:site_name" content="666RS" />
         <meta property="og:image" content={socialImage} />
-        <meta property="og:image:alt" content="666RS Game Download and APK" />
+        <meta
+          property="og:image:alt"
+          content="666RS Game Download and APK"
+        />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={title} />
@@ -48,11 +53,11 @@ function Download() {
         />
       </Helmet>
 
-      <main id="main-content" className="bg-gray-200">
+      <div className="bg-gray-200 text-gray-900">
         <HeroSection />
         <ArticleSection />
         <ContentSection />
-      </main>
+      </div>
     </>
   );
 }

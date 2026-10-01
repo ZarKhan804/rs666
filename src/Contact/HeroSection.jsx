@@ -35,6 +35,7 @@ function HeroSection() {
               </span>
             </div>
 
+            {/* واحد واضح H1 */}
             <h1
               id="contact-page-title"
               className="text-4xl font-black leading-[1.05] tracking-tight text-gray-950 sm:text-5xl md:text-6xl"
@@ -43,6 +44,7 @@ function HeroSection() {
               <span className="bg-gradient-to-r from-yellow-700 via-amber-600 to-yellow-700 bg-clip-text text-transparent">
                 666RS Game
               </span>
+
               <span className="mt-1 block text-gray-950">
                 Support & Assistance
               </span>
@@ -50,8 +52,9 @@ function HeroSection() {
 
             <p className="mx-auto mt-5 max-w-2xl text-sm leading-7 text-gray-700 sm:text-base">
               Have a question about 666RS Game, mobile access, account
-              information, or the available gaming platform? Use the contact
-              form below to send your message and request general assistance.
+              information, download guidance, or the available gaming
+              platform? Use the contact form below to send your message and
+              request general assistance.
             </p>
 
             <div className="mt-7 flex flex-col justify-center gap-3 sm:flex-row">

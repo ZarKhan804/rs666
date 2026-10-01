@@ -87,9 +87,9 @@ function ContentSection() {
 
           <p className="mt-5 text-center text-sm leading-7 text-gray-700 sm:text-base md:text-left">
             Visitors can use the 666RS contact form to send questions,
-            feedback, account-related enquiries, or general platform
-            information requests. Provide accurate details so your message
-            can be understood clearly.
+            feedback, account-related enquiries, download questions, mobile
+            access requests, or general platform information requests. Provide
+            accurate details so your message can be understood clearly.
           </p>
 
           <div className="mt-7 space-y-3">
@@ -131,20 +131,57 @@ function ContentSection() {
             </div>
           </div>
 
+          {/* Internal links */}
           <div className="mt-6 grid grid-cols-2 gap-3">
-            <Link
-              to="/download"
-              className="rounded-xl border border-gray-300 bg-white p-4 text-center text-sm font-bold text-gray-800 transition hover:-translate-y-1 hover:border-yellow-400 hover:shadow-md"
-            >
-              666RS Download
-            </Link>
-
             <Link
               to="/"
               className="rounded-xl border border-gray-300 bg-white p-4 text-center text-sm font-bold text-gray-800 transition hover:-translate-y-1 hover:border-yellow-400 hover:shadow-md"
             >
               666RS Game
             </Link>
+
+            <Link
+              to="/about-us"
+              className="rounded-xl border border-gray-300 bg-white p-4 text-center text-sm font-bold text-gray-800 transition hover:-translate-y-1 hover:border-yellow-400 hover:shadow-md"
+            >
+              About 666RS
+            </Link>
+
+            <Link
+              to="/blog"
+              className="rounded-xl border border-gray-300 bg-white p-4 text-center text-sm font-bold text-gray-800 transition hover:-translate-y-1 hover:border-yellow-400 hover:shadow-md"
+            >
+              666RS Blog
+            </Link>
+
+            <Link
+              to="/download"
+              className="rounded-xl border border-gray-300 bg-white p-4 text-center text-sm font-bold text-gray-800 transition hover:-translate-y-1 hover:border-yellow-400 hover:shadow-md"
+            >
+              666RS Download
+            </Link>
+          </div>
+
+          {/* حقیقی بیرونی لنک */}
+          <div className="mt-6 rounded-xl border border-gray-300 bg-white p-5">
+            <h3 className="text-lg font-extrabold text-gray-950">
+              General Online Safety
+            </h3>
+
+            <p className="mt-2 text-sm leading-7 text-gray-600">
+              For general information about online safety, account protection,
+              and safer use of online services, visitors can also review the
+              Google Safety Center.
+            </p>
+
+            <a
+              href="https://safety.google/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-3 inline-block font-bold text-yellow-700 underline decoration-yellow-400 underline-offset-4 hover:text-yellow-800"
+            >
+              Visit Google Safety Center
+            </a>
           </div>
         </div>
 

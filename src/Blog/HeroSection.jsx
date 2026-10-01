@@ -39,9 +39,9 @@ export default function HeroSection() {
             </h1>
 
             <p className="mx-auto mt-6 max-w-3xl text-base leading-8 text-gray-700 sm:text-lg">
-              Explore practical information about the 666RS platform,
-              mobile access, application topics, account guidance, gaming
-              resources and related website information.
+              Explore practical information about the 666RS platform, mobile
+              access, application topics, account guidance, gaming resources
+              and related website information.
             </p>
 
             <p className="mx-auto mt-4 max-w-3xl text-sm leading-7 text-gray-600 sm:text-base">

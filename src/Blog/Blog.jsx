@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+
 import HeroSection from "./HeroSection";
 import ArticleSection from "./ArticleSection";
 import ContentSection from "./ContentSection";
@@ -19,7 +20,7 @@ export default function Blog() {
     "@context": "https://schema.org",
     "@type": "Blog",
     name: "666RS Game Blog",
-    description,
+    description: description,
     url: PAGE_URL,
     publisher: {
       "@type": "Organization",
@@ -30,6 +31,7 @@ export default function Blog() {
   return (
     <>
       <Helmet>
+        {/* Basic SEO */}
         <title>{title}</title>
 
         <meta name="description" content={description} />
@@ -41,8 +43,10 @@ export default function Blog() {
 
         <meta name="author" content="666RS" />
 
+        {/* Canonical */}
         <link rel="canonical" href={PAGE_URL} />
 
+        {/* Open Graph */}
         <meta property="og:type" content="website" />
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
@@ -54,6 +58,7 @@ export default function Blog() {
           content="666RS Game Blog and Gaming Guides"
         />
 
+        {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />
@@ -63,16 +68,17 @@ export default function Blog() {
           content="666RS Game Blog and Gaming Guides"
         />
 
+        {/* Structured Data */}
         <script type="application/ld+json">
           {JSON.stringify(structuredData)}
         </script>
       </Helmet>
 
-      <main id="main-content" className="bg-gray-200 text-gray-900">
+      <div className="bg-gray-200 text-gray-900">
         <HeroSection />
         <ArticleSection />
         <ContentSection />
-      </main>
+      </div>
     </>
   );
 }

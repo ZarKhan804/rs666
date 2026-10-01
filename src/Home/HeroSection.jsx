@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 
 function HeroSection() {
@@ -147,7 +146,9 @@ function HeroSection() {
 
           <p className="mt-5 max-w-2xl text-center text-xs leading-5 text-gray-600">
             Browse 666RS Game information, mobile access resources, gaming
-            guides and useful website pages from one place.
+            guides and useful website pages from one place. Explore the
+            About, Blog, Download and Contact sections for additional
+            information.
           </p>
         </div>
       </div>
@@ -156,4 +157,3 @@ function HeroSection() {
 }
 
 export default HeroSection;
-
