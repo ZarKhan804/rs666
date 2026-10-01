@@ -1,25 +1,30 @@
+import React from "react";
 import { Helmet } from "react-helmet-async";
+
 import HeroSection from "./HeroSection";
 import ArticleSection from "./ArticleSection";
 import ContentSection from "./ContentSection";
 
-function Home() {
-  const canonicalUrl = "https://666rspak.com/";
+const SITE_URL = "https://666rspak.com";
+const PAGE_URL = `${SITE_URL}/`;
 
-  const title = "666RS Game – Download APK & Play Online in Pakistan";
+const TITLE = "666RS Game – Download APK & Play Online in Pakistan";
 
-  const description =
-    "Explore 666RS Game Pakistan information, mobile access, download guidance, gaming features, account resources and useful 666RS gaming guides.";
+const DESCRIPTION =
+  "Explore 666RS Game Pakistan information, mobile access, download guidance, gaming features, account resources and useful 666RS gaming guides.";
 
-  const socialImage =
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB_WP8_RE8VQ3n5hRA6qQGwJ17yuor8qbHdXmmqvmLz4yzvNfun1p7YVcg&s=10";
+const SOCIAL_IMAGE =
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB_WP8_RE8VQ3n5hRA6qQGwJ17yuor8qbHdXmmqvmLz4yzvNfun1p7YVcg&s=10";
 
+const Home = () => {
   return (
     <>
       <Helmet>
-        <title>{title}</title>
+        <html lang="en" />
 
-        <meta name="description" content={description} />
+        <title>{TITLE}</title>
+
+        <meta name="description" content={DESCRIPTION} />
 
         <meta
           name="robots"
@@ -28,33 +33,30 @@ function Home() {
 
         <meta name="author" content="666RS" />
 
-        <link rel="canonical" href={canonicalUrl} />
+        <link rel="canonical" href={PAGE_URL} />
 
         <meta property="og:type" content="website" />
-        <meta property="og:title" content={title} />
-        <meta property="og:description" content={description} />
-        <meta property="og:url" content={canonicalUrl} />
+        <meta property="og:title" content={TITLE} />
+        <meta property="og:description" content={DESCRIPTION} />
+        <meta property="og:url" content={PAGE_URL} />
         <meta property="og:site_name" content="666RS" />
-        <meta property="og:image" content={socialImage} />
+        <meta property="og:image" content={SOCIAL_IMAGE} />
         <meta property="og:image:alt" content="666RS Game Pakistan" />
 
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={title} />
-        <meta name="twitter:description" content={description} />
-        <meta name="twitter:image" content={socialImage} />
-        <meta
-          name="twitter:image:alt"
-          content="666RS Game Pakistan"
-        />
+        <meta name="twitter:title" content={TITLE} />
+        <meta name="twitter:description" content={DESCRIPTION} />
+        <meta name="twitter:image" content={SOCIAL_IMAGE} />
+        <meta name="twitter:image:alt" content="666RS Game Pakistan" />
       </Helmet>
 
-      <main id="main-content" className="bg-gray-200">
+      <main className="bg-gray-200 text-gray-900">
         <HeroSection />
         <ArticleSection />
         <ContentSection />
       </main>
     </>
   );
-}
+};
 
 export default Home;

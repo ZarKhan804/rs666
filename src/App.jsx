@@ -1,14 +1,13 @@
-
-import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { useEffect } from "react";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 
 import Home from "./Home/Home";
 import AboutUs from "./AboutUs/AboutUs";
-import Contact from "./Contact/Contact";
 import Blog from "./Blog/Blog";
+import Contact from "./Contact/Contact";
 import Download from "./Download/Download";
 
 function ScrollToTop() {
@@ -30,22 +29,23 @@ function App() {
     <BrowserRouter>
       <ScrollToTop />
 
-      <Header />
+      <div className="min-h-screen bg-gray-200 text-gray-900">
+        <Header />
 
-      <main id="main-content">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about-us" element={<AboutUs />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/download" element={<Download />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-      </main>
+        <main id="main-content">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about-us" element={<AboutUs />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/download" element={<Download />} />
+          </Routes>
+        </main>
 
-      <Footer />
+        <Footer />
+      </div>
     </BrowserRouter>
   );
 }
 
 export default App;
-
