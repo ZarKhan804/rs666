@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 
 function HeroSection() {
@@ -116,7 +117,7 @@ function HeroSection() {
             </Link>
 
             <Link
-              to="/about"
+              to="/about-us"
               className="rounded-lg border border-gray-700/20 bg-white/50 px-4 py-2 text-xs font-bold text-gray-800 backdrop-blur-sm transition hover:border-yellow-500/50 hover:bg-yellow-400/20 hover:text-yellow-800"
             >
               About 666RS
@@ -155,3 +156,4 @@ function HeroSection() {
 }
 
 export default HeroSection;
+

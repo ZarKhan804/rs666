@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Mail, MessageCircle, Send, Phone } from "lucide-react";
 import emailjs from "@emailjs/browser";
+import { Link } from "react-router-dom";
 
 function ContentSection() {
   const [formData, setFormData] = useState({
@@ -72,11 +73,8 @@ function ContentSection() {
       className="bg-gray-200"
     >
       <div className="mx-auto grid max-w-7xl gap-10 px-5 py-12 sm:py-16 md:grid-cols-2 lg:px-8">
-
-        {/* LEFT CONTENT */}
-
         <div>
-          <p className="text-center text-xs font-bold uppercase tracking-[0.2em] text-yellow-700 md:text-left sm:text-sm">
+          <p className="text-center text-xs font-bold uppercase tracking-[0.2em] text-yellow-700 sm:text-sm md:text-left">
             666RS Game Contact
           </p>
 
@@ -95,9 +93,8 @@ function ContentSection() {
           </p>
 
           <div className="mt-7 space-y-3">
-
             <a
-              href="mailto:contact@royalxcasinos777.com"
+              href="mailto:zaarkhan483@gmail.com"
               aria-label="Email 666RS Game Support"
               className="flex items-center gap-4 rounded-xl border border-gray-300 bg-white p-4 transition duration-300 hover:-translate-y-1 hover:border-yellow-400 hover:shadow-md"
             >
@@ -107,7 +104,7 @@ function ContentSection() {
               />
 
               <span className="text-sm font-medium text-gray-700 sm:text-base">
-                contact@royalxcasinos777.com
+                zaarkhan483@gmail.com
               </span>
             </a>
 
@@ -132,36 +129,30 @@ function ContentSection() {
                 666RS Customer Assistance
               </span>
             </div>
-
           </div>
 
           <div className="mt-6 grid grid-cols-2 gap-3">
-
-            <a
-              href="/666rs/download"
+            <Link
+              to="/download"
               className="rounded-xl border border-gray-300 bg-white p-4 text-center text-sm font-bold text-gray-800 transition hover:-translate-y-1 hover:border-yellow-400 hover:shadow-md"
             >
               666RS Download
-            </a>
+            </Link>
 
-            <a
-              href="/666rs"
+            <Link
+              to="/"
               className="rounded-xl border border-gray-300 bg-white p-4 text-center text-sm font-bold text-gray-800 transition hover:-translate-y-1 hover:border-yellow-400 hover:shadow-md"
             >
               666RS Game
-            </a>
-
+            </Link>
           </div>
         </div>
-
-        {/* FORM */}
 
         <form
           onSubmit={handleSubmit}
           aria-label="666RS Game contact form"
           className="rounded-2xl border border-gray-300 bg-white p-6 shadow-lg sm:p-8"
         >
-
           <div>
             <label
               htmlFor="contact-name"
@@ -254,21 +245,15 @@ function ContentSection() {
                 : "bg-yellow-400 hover:bg-yellow-300"
             }`}
           >
-            <span>
-              {loading ? "Sending..." : "Send Message"}
-            </span>
+            <span>{loading ? "Sending..." : "Send Message"}</span>
 
-            <Send
-              size={18}
-              aria-hidden="true"
-            />
+            <Send size={18} aria-hidden="true" />
           </button>
 
           <p className="mt-4 text-center text-xs leading-5 text-gray-500">
-            Please provide accurate information when submitting your
-            666RS Game enquiry.
+            Please provide accurate information when submitting your 666RS
+            Game enquiry.
           </p>
-
         </form>
       </div>
     </section>

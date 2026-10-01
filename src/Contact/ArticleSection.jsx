@@ -7,11 +7,7 @@ const ArticleSection = () => {
       className="bg-gray-200 py-8 sm:py-12"
     >
       <div className="mx-auto max-w-5xl px-5 lg:px-8">
-
-        {/* ================= INTERNAL LINKS ARTICLE ================= */}
-
         <article className="rounded-2xl border border-gray-300 bg-white p-6 shadow-sm sm:p-8 lg:p-10">
-
           <h2
             id="666rs-contact-article"
             className="text-2xl font-extrabold leading-tight text-gray-950 sm:text-3xl"
@@ -20,12 +16,11 @@ const ArticleSection = () => {
           </h2>
 
           <div className="mt-5 space-y-5 text-sm leading-8 text-gray-600 sm:text-base">
-
             <p>
-              The <strong>666RS Contact</strong> page provides visitors with
-              a dedicated place to send questions, feedback, and general
-              enquiries about the 666RS Game platform. Users searching for
-              <strong> 666RS Game Support</strong>,{" "}
+              The <strong>666RS Contact</strong> page provides visitors with a
+              dedicated place to send questions, feedback, and general
+              enquiries about the 666RS Game platform. Users searching for{" "}
+              <strong>666RS Game Support</strong>,{" "}
               <strong>666RS Customer Support</strong>, or general{" "}
               <strong>666RS Assistance</strong> can use the available contact
               form to provide their information and message.
@@ -35,7 +30,7 @@ const ArticleSection = () => {
               Visitors who need information about{" "}
               <strong>666RS Game Download</strong> can also visit the{" "}
               <Link
-                to="/666rs/download"
+                to="/download"
                 className="font-semibold text-yellow-700 underline decoration-yellow-400 underline-offset-4 hover:text-yellow-800"
               >
                 666RS Download
@@ -67,7 +62,7 @@ const ArticleSection = () => {
             <p>
               Visitors interested in the main gaming platform can explore the{" "}
               <Link
-                to="/666rs"
+                to="/"
                 className="font-semibold text-yellow-700 underline decoration-yellow-400 underline-offset-4 hover:text-yellow-800"
               >
                 666RS Game
@@ -103,7 +98,7 @@ const ArticleSection = () => {
               Visitors looking for mobile access or download information can
               use the dedicated{" "}
               <Link
-                to="/666rs/download"
+                to="/download"
                 className="font-semibold text-yellow-700 underline decoration-yellow-400 underline-offset-4 hover:text-yellow-800"
               >
                 666RS Game Download
@@ -130,19 +125,16 @@ const ArticleSection = () => {
               general website assistance.
             </p>
 
-            {/* ================= INTERNAL LINK CARDS ================= */}
-
             <div className="grid gap-3 pt-4 sm:grid-cols-3">
-
               <Link
-                to="/666rs"
+                to="/"
                 className="rounded-xl border border-gray-300 bg-gray-50 p-4 text-center text-sm font-bold text-gray-800 transition duration-300 hover:-translate-y-1 hover:border-yellow-400 hover:bg-yellow-50 hover:shadow-md"
               >
                 666RS Game
               </Link>
 
               <Link
-                to="/666rs/download"
+                to="/download"
                 className="rounded-xl border border-gray-300 bg-gray-50 p-4 text-center text-sm font-bold text-gray-800 transition duration-300 hover:-translate-y-1 hover:border-yellow-400 hover:bg-yellow-50 hover:shadow-md"
               >
                 666RS Download
@@ -154,23 +146,17 @@ const ArticleSection = () => {
               >
                 Main Website
               </Link>
-
             </div>
-
           </div>
         </article>
 
-        {/* ================= FINAL ARTICLE ================= */}
-
         <article className="mt-5 rounded-2xl border border-gray-300 bg-white p-6 shadow-sm sm:p-8">
-
           <h2 className="text-2xl font-extrabold text-gray-950 sm:text-3xl">
             666RS Contact & Customer Support
           </h2>
 
           <p className="mt-4 text-base leading-8 text-gray-600 sm:text-[17px]">
-            Visitors searching for{" "}
-            <strong>666RS Contact</strong>,{" "}
+            Visitors searching for <strong>666RS Contact</strong>,{" "}
             <strong>666RS Game Contact</strong>,{" "}
             <strong>666RS Support</strong>,{" "}
             <strong>666RS Customer Support</strong>,{" "}
@@ -184,7 +170,7 @@ const ArticleSection = () => {
           <p className="mt-4 text-base leading-8 text-gray-600 sm:text-[17px]">
             For visitors interested in download information, the{" "}
             <Link
-              to="/666rs/download"
+              to="/download"
               className="font-semibold text-yellow-700 underline decoration-yellow-400 underline-offset-4 hover:text-yellow-800"
             >
               666RS Download
@@ -196,16 +182,14 @@ const ArticleSection = () => {
           <p className="mt-4 text-base leading-8 text-gray-600 sm:text-[17px]">
             Visitors can also return to the{" "}
             <Link
-              to="/666rs"
+              to="/"
               className="font-semibold text-yellow-700 underline decoration-yellow-400 underline-offset-4 hover:text-yellow-800"
             >
               666RS Game
             </Link>{" "}
             page to explore the available platform information.
           </p>
-
         </article>
-
       </div>
     </section>
   );

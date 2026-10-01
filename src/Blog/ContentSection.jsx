@@ -7,9 +7,7 @@ export default function ContentSection() {
       className="bg-gray-200 pb-14 pt-0 sm:pb-20"
     >
       <div className="mx-auto max-w-5xl px-5 lg:px-8">
-
         <article className="rounded-3xl border border-gray-300 bg-white p-6 shadow-sm sm:p-8 lg:p-10">
-
           <header>
             <h2
               id="666rs-blog-resources"
@@ -25,7 +23,6 @@ export default function ContentSection() {
           </header>
 
           <div className="mt-8 space-y-8 text-base leading-8 text-gray-700">
-
             <section>
               <h3 className="text-2xl font-extrabold text-gray-900">
                 Learn More About 666RS Game
@@ -134,7 +131,6 @@ export default function ContentSection() {
               </h3>
 
               <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-
                 <Link
                   to="/"
                   className="group rounded-2xl border border-gray-200 bg-gray-50 p-5 transition duration-300 hover:-translate-y-1 hover:border-yellow-400 hover:bg-yellow-50 hover:shadow-md"
@@ -186,10 +182,8 @@ export default function ContentSection() {
                     Website enquiries
                   </span>
                 </Link>
-
               </div>
             </nav>
-
           </div>
         </article>
       </div>

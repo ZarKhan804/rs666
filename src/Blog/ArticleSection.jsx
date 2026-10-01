@@ -8,7 +8,6 @@ export default function ArticleSection() {
       className="bg-gray-200 px-4 py-14 text-gray-900 sm:px-6 lg:px-8"
     >
       <div className="mx-auto max-w-5xl">
-
         <header className="mb-10 text-center">
           <span className="inline-block rounded-full border border-yellow-600/30 bg-white/40 px-4 py-2 text-xs font-bold uppercase tracking-[0.2em] text-yellow-800">
             666RS Gaming Guide
@@ -29,7 +28,6 @@ export default function ArticleSection() {
         </header>
 
         <article className="rounded-3xl border border-gray-300 bg-white p-6 shadow-xl sm:p-9 lg:p-10">
-
           <section className="mb-10">
             <h3 className="text-2xl font-black text-gray-950">
               What Is 666RS Game?
@@ -249,7 +247,6 @@ export default function ArticleSection() {
               participate within limits they can comfortably afford.
             </p>
           </section>
-
         </article>
       </div>
     </section>

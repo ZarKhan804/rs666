@@ -105,9 +105,9 @@ function ArticleSection() {
 
             <p className="mt-5 text-sm leading-8 text-gray-800 sm:text-base">
               Visitors researching 666RS Game Download or 666RS APK should
-              verify the source, version information, device requirements,
-              and applicable installation instructions before installing
-              software from outside an official application store.
+              verify the source, version information, device requirements, and
+              applicable installation instructions before installing software
+              from outside an official application store.
             </p>
 
             <p className="mt-5 text-sm leading-8 text-gray-800 sm:text-base">
@@ -143,6 +143,7 @@ function ArticleSection() {
                 href={gameUrl}
                 target="_blank"
                 rel="nofollow sponsored noopener noreferrer"
+                aria-label="Explore 666RS Game"
                 className="inline-flex items-center rounded-xl bg-gradient-to-r from-yellow-300 via-yellow-400 to-amber-400 px-6 py-3 text-sm font-extrabold text-gray-950 shadow-lg shadow-yellow-600/20 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-yellow-600/30"
               >
                 Explore 666RS Game →
@@ -218,7 +219,7 @@ function ArticleSection() {
 
             <div className="mt-6 grid gap-4 sm:grid-cols-2">
               <Link
-                to="/about"
+                to="/about-us"
                 className="group rounded-2xl border border-gray-400/70 bg-gray-300/70 p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-yellow-500 hover:bg-yellow-100 hover:shadow-lg hover:shadow-yellow-500/10"
               >
                 <span className="font-bold text-gray-950">

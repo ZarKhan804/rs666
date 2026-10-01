@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 
 export default function ContentSection() {
@@ -8,7 +7,6 @@ export default function ContentSection() {
       className="bg-gray-200 pb-14 pt-0 sm:pb-20"
     >
       <div className="mx-auto max-w-5xl px-5 lg:px-8">
-
         <article className="rounded-3xl border border-gray-700/20 bg-white/50 p-6 shadow-xl backdrop-blur-sm sm:p-9 lg:p-10">
 
           <h2
@@ -164,4 +162,3 @@ export default function ContentSection() {
     </section>
   );
 }
-

@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 
 export default function HeroSection() {
@@ -26,7 +25,7 @@ export default function HeroSection() {
       <div className="relative h-[2px] w-full bg-gradient-to-r from-transparent via-yellow-500 to-transparent" />
 
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex min-h-0 flex-col items-center py-7 sm:py-9 lg:py-10">
+        <div className="flex flex-col items-center py-7 sm:py-9 lg:py-10">
 
           <div className="mb-3 inline-flex rounded-full border border-yellow-600/30 bg-white/30 px-4 py-1.5 shadow-sm backdrop-blur-md">
             <span className="text-[10px] font-extrabold uppercase tracking-[0.2em] text-yellow-800 sm:text-xs">
@@ -36,7 +35,7 @@ export default function HeroSection() {
 
           <h1
             id="download-title"
-            className="max-w-4xl text-center text-3xl font-black leading-tight tracking-tight text-gray-950 sm:text-4xl md:text-5xl lg:text-5xl"
+            className="max-w-4xl text-center text-3xl font-black leading-tight tracking-tight text-gray-950 sm:text-4xl md:text-5xl"
           >
             Download{" "}
             <span className="bg-gradient-to-r from-yellow-700 via-amber-600 to-yellow-700 bg-clip-text text-transparent">
@@ -45,12 +44,11 @@ export default function HeroSection() {
           </h1>
 
           <p className="mx-auto mt-3 max-w-2xl text-center text-sm leading-6 text-gray-700 sm:text-base">
-            Access 666RS Game Download, mobile access, 666RS APK and
-            gaming information from one simple page.
+            Access 666RS Game Download, mobile access, 666RS APK and gaming
+            information from one simple page.
           </p>
 
           <div className="relative mt-5 w-full max-w-3xl">
-
             <div
               aria-hidden="true"
               className="absolute -inset-3 rounded-3xl bg-yellow-400/15 blur-2xl"
@@ -64,9 +62,7 @@ export default function HeroSection() {
               className="group relative block"
             >
               <div className="relative overflow-hidden rounded-2xl border border-yellow-500/30 bg-gray-300 p-1.5 shadow-xl transition-all duration-300 group-hover:-translate-y-1 group-hover:border-yellow-500/70 group-hover:shadow-yellow-500/20">
-
                 <div className="relative overflow-hidden rounded-xl">
-
                   <img
                     src={gameImage}
                     alt="666RS Game Download"
@@ -83,14 +79,12 @@ export default function HeroSection() {
                       Click to Download
                     </span>
                   </div>
-
                 </div>
               </div>
             </a>
           </div>
 
           <div className="mt-5 flex flex-col items-center justify-center gap-3 sm:flex-row">
-
             <a
               href={gameUrl}
               target="_blank"
@@ -100,7 +94,6 @@ export default function HeroSection() {
             >
               Download 666RS Game
             </a>
-
           </div>
 
           <nav
@@ -140,7 +133,6 @@ export default function HeroSection() {
             Review the available information and device requirements before
             accessing the 666RS gaming platform.
           </p>
-
         </div>
       </div>
 
@@ -151,4 +143,3 @@ export default function HeroSection() {
     </section>
   );
 }
-

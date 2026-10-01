@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function HeroSection() {
   return (
     <section
@@ -26,9 +28,7 @@ function HeroSection() {
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex min-h-[430px] items-center justify-center py-8 sm:min-h-[460px] sm:py-10 lg:min-h-[480px]">
-
           <header className="w-full max-w-4xl text-center">
-
             <div className="mb-4 inline-flex rounded-full border border-yellow-600/30 bg-white/30 px-4 py-2 shadow-sm backdrop-blur-md">
               <span className="text-[11px] font-extrabold uppercase tracking-[0.22em] text-yellow-800 sm:text-xs">
                 666RS Contact & Support
@@ -43,7 +43,7 @@ function HeroSection() {
               <span className="bg-gradient-to-r from-yellow-700 via-amber-600 to-yellow-700 bg-clip-text text-transparent">
                 666RS Game
               </span>
-              <span className="block mt-1 text-gray-950">
+              <span className="mt-1 block text-gray-950">
                 Support & Assistance
               </span>
             </h1>
@@ -62,12 +62,12 @@ function HeroSection() {
                 Contact 666RS Support
               </a>
 
-              <a
-                href=""
+              <Link
+                to="/download"
                 className="inline-flex items-center justify-center rounded-xl border border-gray-400 bg-white/60 px-7 py-3.5 text-sm font-bold text-gray-900 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-yellow-500 hover:bg-yellow-50"
               >
                 666RS Download
-              </a>
+              </Link>
             </div>
 
             <div className="mx-auto mt-7 flex max-w-2xl flex-wrap items-center justify-center gap-x-5 gap-y-2 text-xs font-semibold text-gray-700 sm:text-sm">
@@ -81,7 +81,6 @@ function HeroSection() {
 
               <span>General Support</span>
             </div>
-
           </header>
         </div>
       </div>

@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 
 export default function ArticleSection() {
@@ -9,7 +8,6 @@ export default function ArticleSection() {
       className="bg-gray-200 px-4 py-14 text-gray-900 sm:px-6 lg:px-8"
     >
       <div className="mx-auto max-w-5xl">
-
         <div className="mb-10 text-center">
           <span className="inline-block rounded-full border border-yellow-600/30 bg-white/30 px-4 py-2 text-xs font-bold uppercase tracking-[0.2em] text-yellow-800">
             666RS Download Information
@@ -126,8 +124,8 @@ export default function ArticleSection() {
             </h3>
 
             <p className="text-base leading-8 text-gray-700">
-              Some visitors may search for download information together with
-              666RS Login or 666RS Registration. Downloading or accessing an
+              Some visitors may search for 666RS Login or 666RS Registration
+              together with download information. Downloading or accessing an
               application does not remove the need to protect account
               credentials. Passwords, OTP codes, PINs and other private account
               information should never be shared with unknown contacts.
@@ -227,4 +225,3 @@ export default function ArticleSection() {
     </section>
   );
 }
-

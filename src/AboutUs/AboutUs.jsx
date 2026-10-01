@@ -6,11 +6,10 @@ import ContentSection from "./ContentSection";
 function AboutUs() {
   const canonicalUrl = "https://666rspak.com/about-us";
 
-  const title =
-    "About 666RS Game – Pakistan Gaming Platform Information";
+  const title = "About 666RS Game – Pakistan Gaming Platform Information";
 
   const description =
-    "Learn about 666RS Game, 666RS Game Pakistan, 666RS APK, mobile access, gaming features, account information, download guidance and useful gaming resources.";
+    "Learn about 666RS Game, mobile access, gaming features, account information, download guidance and useful gaming resources.";
 
   const socialImage =
     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB_WP8_RE8VQ3n5hRA6qQGwJ17yuor8qbHdXmmqvmLz4yzvNfun1p7YVcg&s=10";
@@ -52,11 +51,11 @@ function AboutUs() {
         />
       </Helmet>
 
-      <main id="main-content" className="bg-gray-200">
+      <div className="bg-gray-200 text-gray-900">
         <HeroSection />
         <ArticleSection />
         <ContentSection />
-      </main>
+      </div>
     </>
   );
 }
