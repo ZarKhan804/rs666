@@ -46,7 +46,7 @@ function Contact() {
         <meta name="twitter:image:alt" content="Contact 666RS Game" />
       </Helmet>
 
-      {/* App.jsx میں پہلے ہی <main> موجود ہے، اس لیے یہاں دوبارہ <main> نہیں بنایا */}
+     
       <div className="bg-gray-200 text-gray-900">
         <HeroSection />
         <ContentSection />
