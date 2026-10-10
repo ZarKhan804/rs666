@@ -3,6 +3,8 @@ import { Helmet } from "react-helmet-async";
 import HeroSection from "./HeroSection";
 import ArticleSection from "./ArticleSection";
 import ContentSection from "./ContentSection";
+import Answer from './Answer';
+import Article from "./Article";
 
 function Download() {
   const SITE_URL = "https://666rspak.com";
@@ -57,6 +59,8 @@ function Download() {
         <HeroSection />
         <ArticleSection />
         <ContentSection />
+          <Answer/>
+          <Article/>
       </div>
     </>
   );

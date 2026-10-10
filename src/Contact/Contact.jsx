@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet-async";
 import HeroSection from "./HeroSection";
 import ContentSection from "./ContentSection";
 import ArticleSection from "./ArticleSection";
+import Answer from './Answer';
 
 const SITE_URL = "https://666rspak.com";
 const PAGE_URL = `${SITE_URL}/contact`;
@@ -51,6 +52,7 @@ function Contact() {
         <HeroSection />
         <ContentSection />
         <ArticleSection />
+        <Answer/>
       </div>
     </>
   );

@@ -3,6 +3,8 @@ import { Helmet } from "react-helmet-async";
 import HeroSection from "./HeroSection";
 import ArticleSection from "./ArticleSection";
 import ContentSection from "./ContentSection";
+import Answer from './Answer';
+import Article from "./Article";
 
 function Home() {
   const title = "666RS Game Pakistan – Download APK & Play Online";
@@ -66,6 +68,8 @@ function Home() {
         <HeroSection />
         <ArticleSection />
         <ContentSection />
+        <Answer/>
+        <Article/>
       </main>
     </>
   );

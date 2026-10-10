@@ -104,7 +104,7 @@ function ContentSection() {
               />
 
               <span className="text-sm font-medium text-gray-700 sm:text-base">
-                zaarkhan483@gmail.com
+              alphapackermover@gmail.com
               </span>
             </a>
 

@@ -3,6 +3,8 @@ import { Helmet } from "react-helmet-async";
 import HeroSection from "./HeroSection";
 import ArticleSection from "./ArticleSection";
 import ContentSection from "./ContentSection";
+import Answer from './Answer';
+import Article from "./Article";
 
 const SITE_URL = "https://666rspak.com";
 const PAGE_URL = `${SITE_URL}/blog`;
@@ -78,6 +80,8 @@ export default function Blog() {
         <HeroSection />
         <ArticleSection />
         <ContentSection />
+        <Answer/>
+        <Article/>
       </div>
     </>
   );
